@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\OpenGLWindow">
+      <UniqueIdentifier>{d720e1a1-e28d-4e94-8ef5-3498171353e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\OpenGLWindow">
+      <UniqueIdentifier>{92b8e5e5-5dfe-48c1-9bf8-f8dcac8051b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Buffers">
+      <UniqueIdentifier>{2f28fc43-4e48-4f0e-9f72-868d82674802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Buffers">
+      <UniqueIdentifier>{77ef5b8d-4774-4a79-9a7a-90e3f84ffe0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Camera">
+      <UniqueIdentifier>{1ca0c939-4f7e-4a6f-b3ef-6427946113d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Camera">
+      <UniqueIdentifier>{701a9b8e-c417-4489-a03f-8ab4b751034d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shaders">
+      <UniqueIdentifier>{c5f1ed99-8303-456c-99f4-459cec91d05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Shaders">
+      <UniqueIdentifier>{6a546dd7-50ff-4f3a-a95e-41132891dd7f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\OpenGL\include\GLAD\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLwin.cpp">
+      <Filter>源文件\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders.h">
+      <Filter>头文件\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders.cpp">
+      <Filter>源文件\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>源文件\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\Camera</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGLwin.h">
+      <Filter>头文件\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>头文件\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件\Camera</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="VertexShader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="FragmentShader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

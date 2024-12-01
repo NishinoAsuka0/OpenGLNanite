@@ -1,0 +1,12 @@
+#version 330 core
+layout (location = 0) in vec3 position;
+layout(location = 1) in vec3 color;				// 颜色变量的顶点属性位置值为 1
+out vec3 ourColor;
+uniform mat4 transformMatrix;						
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+void main()
+{
+	ourColor = color;
+	gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4(position, 1.0f);	 // 注意矩阵乘法要从右向左读
+}

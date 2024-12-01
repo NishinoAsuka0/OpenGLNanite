@@ -1,0 +1,11 @@
+﻿main.obj : error LNK2019: 无法解析的外部符号 glfwInit，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwTerminate，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwWindowHint，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwCreateWindow，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwWindowShouldClose，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwPollEvents，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwMakeContextCurrent，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwSwapBuffers，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwGetProcAddress，函数 main 中引用了该符号
+D:\VS\OpenGL\lib\glfw3.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+D:\VS\VSProj\OpenGL_Nanite\x64\Debug\OpenGL_Nanite.exe : fatal error LNK1120: 9 个无法解析的外部命令
