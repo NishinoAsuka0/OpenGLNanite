@@ -1,0 +1,364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FA9931D5-CB6A-30E8-BCF5-101ED0143265}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>metis</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">metis.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">metis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">metis.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">metis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">metis.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">metis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">metis.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">metis</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MinimalRebuild></MinimalRebuild>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SupportJustMyCode></SupportJustMyCode>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;MSC;_CRT_SECURE_NO_DEPRECATE;USE_GKREGEX;NDEBUG;NDEBUG2;__thread=__declspec(thread);CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/libmetis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0 -BD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build --check-stamp-file D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/libmetis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/libmetis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0 -BD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build --check-stamp-file D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/libmetis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/libmetis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0 -BD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build --check-stamp-file D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/libmetis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/libmetis/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\Cmake\bin\cmake.exe -SD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0 -BD:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build --check-stamp-file D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/libmetis/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\b64.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\error.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fkvkselect.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fs.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c">
+      <ObjectFileName>$(IntDir)/__/GKlib/graph.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\io.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\mcore.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\omp.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pdb.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\random.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\rw.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\sort.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\timers.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\tokenizer.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c">
+      <ObjectFileName>$(IntDir)/__/GKlib/util.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\auxapi.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\bucketsort.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\checkgraph.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\compress.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fortran.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\frename.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c">
+      <ObjectFileName>$(IntDir)/graph.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kmetis.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\mcutil.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\mesh.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\meshpart.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\mincover.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\mmd.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\options.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\pmetis.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\refine.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\separator.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\srefine.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\timing.c" />
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\util.c">
+      <ObjectFileName>$(IntDir)/util.c.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\wspace.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\ZERO_CHECK.vcxproj">
+      <Project>{8FABBBB2-6E09-3B4D-A9A9-660D7393AC50}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

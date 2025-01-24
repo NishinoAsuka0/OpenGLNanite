@@ -1,14 +1,21 @@
 #pragma once
-#include<iostream>
-#include<SOIL2/SOIL2.h>
+#include <iostream>
+#include <SOIL2/SOIL2.h>
 #define GLEW_STATIC
-#include<GL/glew.h>
-#include<glut.h>
-#include<GLFW/glfw3.h>
-#include<glm.hpp>
-#include<gtc/matrix_transform.hpp>
-#include<gtc/type_ptr.hpp>
-#include<vector>
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
+#include <glm.hpp>
+#include <gtc/matrix_transform.hpp>
+#include <gtc/type_ptr.hpp>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
+#include "Types.h"
+#include "VecMath.h"
+#include <cmath>
+#include <algorithm>
+#include "meshoptimier/src/meshoptimizer.h"
+#include "metis.h"
 
 using namespace std;
 

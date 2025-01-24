@@ -1,0 +1,28 @@
+﻿  Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/programs/CMakeLists.txt
+  cmpfillin.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  io.c
+  (编译源文件“../../programs/cmpfillin.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../programs/io.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c(24,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c(180,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c(288,39): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c(381,33): warning C4244: “函数”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c(389,26): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+  smbfactor.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../programs/smbfactor.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\smbfactor.c(24,15): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\smbfactor.c(24,12): warning C4101: “j”: 未引用的局部变量
+  正在生成代码...
+  cmpfillin.vcxproj -> D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\cmpfillin.exe

@@ -7,40 +7,40 @@ void Camera::UpdateCameraVectors()
     front.x = cos(glm::radians(yaw)) * cos(glm::radians(pitch));
     front.y = sin(glm::radians(pitch));
     front.z = sin(glm::radians(yaw)) * cos(glm::radians(pitch));
-    this->cameraZAxis = front;
+    this->front = front;
 
     //cout << this->cameraZAxis.x << ", " << this->cameraZAxis.y << ", " << this->cameraZAxis.z << endl;
     //ÉãÏñ»ú×ø±êÏµ
-    this->cameraZAxis = glm::normalize(this->cameraZAxis);
-    this->cameraXAxis = glm::normalize(glm::cross(this->cameraZAxis, this->cameraYAxis));
-    this->cameraYAxis = glm::normalize(glm::cross(this->cameraXAxis, this->cameraZAxis));
+    this->front = glm::normalize(this->front);
+    this->right = glm::normalize(glm::cross(this->front, this->worldUp));
+    this->up = glm::normalize(glm::cross(this->right, this->front));
 }
 
 glm::mat4 Camera::GetViewMatrix()
 {
-    return glm::lookAt(this->position, this->position + this->cameraZAxis, this->cameraYAxis);      //¹Û²ì¾ØÕó
+    return glm::lookAt(this->position, this->position + this->front, this->worldUp);      //¹Û²ì¾ØÕó
 }
 
 void Camera::ProcessKeyboard(CameraMovement direction, float deltaTime)
 {
-    float velocity = this->movementSpeed * deltaTime;
+    float velocity = static_cast<float>(this->movementSpeed * deltaTime);
     if (direction == FORWARD)
-        this->position += this->cameraZAxis * velocity;
+        this->position += this->front * velocity;
 
     if (direction == BACKWARD)
-        this->position -= this->cameraZAxis * velocity;
+        this->position -= this->front * velocity;
 
     if (direction == LEFT)
-        this->position -= this->cameraXAxis * velocity;
+        this->position -= this->right * velocity;
 
     if (direction == RIGHT)
-        this->position += this->cameraXAxis * velocity;
+        this->position += this->right * velocity;
 
     if (direction == UPWARD)
-        this->position += this->cameraYAxis * velocity;
+        this->position += this->up * velocity;
 
     if (direction == DOWNWARD)
-        this->position -= this->cameraYAxis * velocity;
+        this->position -= this->up * velocity;
 }
 
 void Camera::ProcessMouseMovement(float xOffset, float yOffset, GLboolean constrainPitch)

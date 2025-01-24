@@ -37,6 +37,18 @@
     <Filter Include="头文件\Shaders">
       <UniqueIdentifier>{6a546dd7-50ff-4f3a-a95e-41132891dd7f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="头文件\NaniteMesh">
+      <UniqueIdentifier>{d1453142-7ed3-4b5d-ba20-7a30ded88ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\NaniteMesh">
+      <UniqueIdentifier>{c6f08073-6667-43e1-8634-ea96f023e207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Math">
+      <UniqueIdentifier>{b517a9a3-778f-483e-92fe-d36742eb26bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{46666663-6251-4ce3-9476-9756d7753aff}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\OpenGL\include\GLAD\src\glad.c">
@@ -60,6 +72,36 @@
     <ClCompile Include="Camera.cpp">
       <Filter>源文件\Camera</Filter>
     </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTable.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Heap.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="BitArray.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Partitioner.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshSimplify.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="NaniteMesh.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGLwin.h">
@@ -71,6 +113,45 @@
     <ClInclude Include="Camera.h">
       <Filter>头文件\Camera</Filter>
     </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitArray.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTable.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMath.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VecType.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Heap.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshSimplify.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="NaniteMesh.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Cluster.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Partitioner.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="VertexShader.txt">
@@ -79,5 +160,8 @@
     <Text Include="FragmentShader.txt">
       <Filter>源文件\Shaders</Filter>
     </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

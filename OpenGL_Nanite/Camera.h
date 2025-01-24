@@ -10,15 +10,21 @@ enum CameraMovement {
 	DOWNWARD		// 向下
 };
 
-const GLfloat SPEED = 6.0f;
+const float YAW = -90.0f;
+const float PITCH = 0.0f;
+const float SPEED = 2.5f;
+const float SENSITIVITY = 0.1f;
+const float ZOOM = 45.0f;
 
 class Camera {
 private:
 	// 摄影机的属性
-	glm::vec3 position;				// 相机当前位置 
-	glm::vec3 cameraZAxis;		// 摄影机的 Z 轴向量
-	glm::vec3 cameraXAxis;		// 摄影机的 X 轴向量
-	glm::vec3 cameraYAxis;		// 摄影机的 Y 轴向量
+	glm::vec3 position;	//位置
+	glm::vec3 front;	//摄像机的Z轴
+	glm::vec3 up;	//摄像机的Y轴
+	glm::vec3 right;	//摄像机的X轴
+	glm::vec3 worldUp;	//世界下的Y轴
+
 	GLfloat movementSpeed;			// 镜头移动速度
 
 	float yaw;		//俯仰角
@@ -29,18 +35,14 @@ private:
 	void UpdateCameraVectors();
 
 public:
-	Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 5.0f), glm::vec3 target = glm::vec3(0.0f, 0.0f, 0.0f),
-		glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f)) :movementSpeed(SPEED) {
+	// constructor with vectors
+	Camera(glm::vec3 position = glm::vec3(0.0f, 0.0f, 0.0f), glm::vec3 up = glm::vec3(0.0f, 1.0f, 0.0f), float yaw = YAW, float pitch = PITCH) : front(glm::vec3(0.0f, 0.0f, -1.0f)), movementSpeed(SPEED), mouseSensitivity(SENSITIVITY), zoom(ZOOM)
+	{
 		this->position = position;
-		this->cameraZAxis = target;
-		this->cameraYAxis = up;
-		this->cameraXAxis = glm::normalize(glm::cross(this->cameraZAxis, this->cameraYAxis));
-
-		this->zoom = 45.0f;
-		this->yaw = 90.0f;
-		this->pitch = 0.0f;
-		this->mouseSensitivity = 0.2f;
-		this->UpdateCameraVectors();		// 实时更新
+		this->worldUp = up;
+		this->yaw = yaw;
+		this->pitch = pitch;
+		UpdateCameraVectors();
 	}
 
 	glm::mat4 GetViewMatrix();
