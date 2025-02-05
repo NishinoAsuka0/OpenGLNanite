@@ -1,59 +1,37 @@
 ﻿  正在扫描源以查找模块依赖项...
-  NaniteMesh.cpp
+  Engine.cpp
 D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
+  (编译源文件“Engine.cpp”)
       D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
       参见“INT32_MIN”的前一个定义
   
 D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
+  (编译源文件“Engine.cpp”)
       D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
       参见“INT32_MAX”的前一个定义
   
 D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
+  (编译源文件“Engine.cpp”)
       D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
       参见“INT64_MIN”的前一个定义
   
 D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
+  (编译源文件“Engine.cpp”)
       D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
       参见“INT64_MAX”的前一个定义
   
 D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(37,17): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
-  (编译源文件“NaniteMesh.cpp”)
+  (编译源文件“Engine.cpp”)
   
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(11,39): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(11,39): warning C4267:         with
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(11,39): warning C4267:         [
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(11,39): warning C4267:             _Ty=unsigned int
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(11,39): warning C4267:         ]
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(16,42): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(16,42): warning C4267:         with
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(16,42): warning C4267:         [
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(16,42): warning C4267:             _Ty=unsigned int
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(16,42): warning C4267:         ]
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(18,47): warning C4267: “参数”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(18,47): warning C4267:         with
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(18,47): warning C4267:         [
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(18,47): warning C4267:             _Ty=unsigned int
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(18,47): warning C4267:         ]
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(41,40): warning C4267: “=”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(41,40): warning C4267:         with
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(41,40): warning C4267:         [
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(41,40): warning C4267:             _Ty=unsigned int
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(41,40): warning C4267:         ]
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(48,40): warning C4267: “=”: 从“size_t”转换到“_Ty”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(48,40): warning C4267:         with
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(48,40): warning C4267:         [
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(48,40): warning C4267:             _Ty=unsigned int
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(48,40): warning C4267:         ]
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(68,10): warning C4244: “初始化”: 从“double”转换到“f32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(80,10): warning C4244: “初始化”: 从“unsigned __int64”转换到“f32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(119,61): warning C4267: “参数”: 从“size_t”转换到“u32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(121,24): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(124,21): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(125,19): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(137,69): warning C4267: “参数”: 从“size_t”转换到“u32”，可能丢失数据
-D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(170,12): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(38,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(39,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(44,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(45,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(47,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(48,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(56,57): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(118,23): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew32s.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
   OpenGL_Nanite.vcxproj -> D:\VS\VSProj\OpenGL_Nanite\x64\Debug\OpenGL_Nanite.exe

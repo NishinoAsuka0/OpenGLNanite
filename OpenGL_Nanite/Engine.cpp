@@ -189,7 +189,7 @@ void Engine::KeyController()
 
 void Engine::LoadModelPath(string path)
 {
-	this->modelPath = path;
+	this->modelPath = "Model/" + path;
 }
 
 
