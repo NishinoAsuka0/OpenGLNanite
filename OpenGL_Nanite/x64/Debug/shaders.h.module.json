@@ -5,14 +5,14 @@
         {
             "primary-output": "x64\\Debug\\Shaders.h.obj",
             "outputs": [
-                "D:\\VS\\VSProj\\OpenGL_Nanite\\OpenGL_Nanite\\x64\\Debug\\vc143.pdb",
+                "E:\\VsProject\\Nanite\\OpenGLNanite\\OpenGL_Nanite\\x64\\Debug\\vc143.pdb",
                 "x64\\Debug\\",
-                "D:\\VS\\VSProj\\OpenGL_Nanite\\OpenGL_Nanite\\x64\\Debug\\Shaders.h.ifc"
+                "E:\\VsProject\\Nanite\\OpenGLNanite\\OpenGL_Nanite\\x64\\Debug\\Shaders.h.ifc"
             ],
             "provides": [
                 {
                     "logical-name": "Shaders.h",
-                    "source-path": "d:\\vs\\vsproj\\opengl_nanite\\opengl_nanite\\shaders.h",
+                    "source-path": "e:\\vsproject\\nanite\\openglnanite\\opengl_nanite\\shaders.h",
                     "lookup-method": "absolute"
                 }
             ],

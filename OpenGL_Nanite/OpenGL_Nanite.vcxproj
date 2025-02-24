@@ -71,8 +71,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>D:\VS\OpenGL\include\GLAD\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glfw-3.4.bin.WIN64\include;D:\VS\OpenGL\SOIL2tool\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\VS\OpenGL\SOIL2tool\lib;D:\VS\OpenGL\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>D:\VS\OpenGL\SOIL2tool\include;D:\VS\OpenGL\include\GLFW\include;D:\VS\OpenGL\include\GLAD\include;$(IncludePath)</IncludePath>
@@ -116,14 +116,14 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\glm;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glut-3.7\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glfw-3.4.bin.WIN64\include;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glew-2.2.0\include;D:\VS\OpenGL\SOIL2tool\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glad\include;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\glm;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glut-3.7\include;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glfw-3.4.bin.WIN64\include;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glew-2.2.0\include;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\SOIL2\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <LanguageStandard>stdcpp20</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <AdditionalDependencies>opengl32.lib;glew32s.lib;glfw3.lib;glut32.lib;glut.lib;soil2-debug.lib;metis.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\Release;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glut-3.7\lib;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glfw-3.4.bin.WIN64\lib-vc2022;D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\openGL配置文件\glew-2.2.0\lib\Release\x64;D:\VS\OpenGL\SOIL2tool\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\Release;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glut-3.7\lib;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glfw-3.4.bin.WIN64\lib-vc2022;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glew-2.2.0\lib\Release\x64;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\SOIL2\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -143,12 +143,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\OpenGL\include\GLAD\src\glad.c" />
     <ClCompile Include="BitArray.cpp" />
     <ClCompile Include="Bounds.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Cluster.cpp" />
     <ClCompile Include="Engine.cpp" />
+    <ClCompile Include="glad.c" />
     <ClCompile Include="HashTable.cpp" />
     <ClCompile Include="Heap.cpp" />
     <ClCompile Include="Main.cpp" />
