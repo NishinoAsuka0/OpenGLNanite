@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
+#include "co/fs.h"
 
 typedef struct Cluster Cluster;
 typedef struct ClusterGroup ClusterGroup;

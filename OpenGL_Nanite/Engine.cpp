@@ -8,7 +8,7 @@ GLfloat lastX = 960;
 GLfloat lastY = 520;
 bool firstMouse = true;
 Model* myModel;
-
+u32 viewMode = 0;
 
 void KeyCallBack(GLFWwindow* window, int key, int scancode, int action, int mode)
 {
@@ -18,7 +18,8 @@ void KeyCallBack(GLFWwindow* window, int key, int scancode, int action, int mode
 		cout << "按下了关闭键 esc = " << key << endl;
 	}
 	if (key == GLFW_KEY_J && action == GLFW_PRESS) {
-		myModel->AddMode();
+		viewMode = (viewMode + 1) % 4;
+		//myModel->AddMode();
 		cout << "切换显示模式" << endl;
 	}
 	if (key >= 0 && key <= 1024)
@@ -97,20 +98,42 @@ void Engine::Draw()
 	/* 开启深度测试 */
 	glEnable(GL_DEPTH_TEST);
 
-	Shader myShader = Shader((GLchar*)"VertexShader.txt", (GLchar*)"FragmentShader.txt");	// 相对路径
-	int width_1, height_1;
-	unsigned char* image1 = SOIL_load_image("Texture1.png", &width_1, &height_1, 0, SOIL_LOAD_RGBA);
-	int width_2, height_2;
-	unsigned char* image2 = SOIL_load_image("Texture2.png", &width_2, &height_2, 0, SOIL_LOAD_RGBA);
-	
-	myModel = new Model(modelPath, true);
-
+	//Shader myShader = Shader((GLchar*)"VertexShader.txt", (GLchar*)"FragmentShader.txt");	// 相对路径
+	//int width_1, height_1;
+	//unsigned char* image1 = SOIL_load_image("Texture1.png", &width_1, &height_1, 0, SOIL_LOAD_RGBA);
+	//int width_2, height_2;
+	//unsigned char* image2 = SOIL_load_image("Texture2.png", &width_2, &height_2, 0, SOIL_LOAD_RGBA);
+	//
+	Renderer render;
+	/*vector<Cluster>clusters;
+	vector<ClusterGroup>clusterGroups;
 	int index = 0;
-	/*for (auto mesh : meshes) {
-		cout << index << endl;
-		mesh.SetUpMesh();
-		index++;
+	for (auto mesh : myModel->GetMeshes()) {
+		for (auto c : ((NaniteMesh*)mesh)->clusters) {
+			c.groupId += index;
+			clusters.push_back(c);
+		}
+		index += clusterGroups.size();
+		clusterGroups.insert(clusterGroups.end(), ((NaniteMesh*)myModel->GetMeshes()[0])->clusterGroups.begin(), ((NaniteMesh*)myModel->GetMeshes()[0])->clusterGroups.end());
 	}*/
+	string dataName = "";
+	int i = 0;
+	while (this->modelPath[i] != '.') {
+		dataName += this->modelPath[i];
+		i++;
+	}
+	dataName += ".txt";
+	FILE* readFile = fopen(dataName.c_str(), "rb");
+	if (!readFile) {
+		myModel = new Model(modelPath, true);
+		PackData(dataName);
+	}
+	ReadPackData(dataName);
+	render.SetScreenSize(this->window.GetWindow(), screenWidth, screenHeight);
+	render.SetCamera(camera);
+	render.SetClusterCount(readClusters.size());
+	render.Init();
+	render.GenerateClusters(readClusters);
 	// draw loop 画图循环
 	while (!glfwWindowShouldClose(this->window.GetWindow()))
 	{
@@ -123,36 +146,32 @@ void Engine::Draw()
 		this->KeyController();
 
 		/* 渲染 + 清除颜色缓冲 */
-		glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
-		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+		/*glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);*/
 
+		render.SetViewMode(viewMode);
+		render.Render();
 		/*  绘制图形 */
-		myShader.Use();					// 图形渲染
-		
-		//glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);	// 画两个三角形 从第0个顶点开始 一共画6次
-		//for(auto mesh:meshes)
-		//{
-			glm::mat4 transformMatrix = glm::mat4(1.0f);
-			glm::mat4 model = glm::mat4(1.0f);
-			model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
-			model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
-			glm::mat4 viewMatrix = camera->GetViewMatrix();	// 求得观察矩阵
+		//myShader.Use();					// 图形渲染
+		//
+		//glm::mat4 transformMatrix = glm::mat4(1.0f);
+		//glm::mat4 model = glm::mat4(1.0f);
+		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+		//model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
+		//glm::mat4 viewMatrix = camera->GetViewMatrix();	// 求得观察矩阵
 
-			glm::mat4 projectionMatrix = glm::perspective(camera->GetZoom(), (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
+		//glm::mat4 projectionMatrix = glm::perspective(camera->GetZoom(), (float)screenWidth / (float)screenHeight, 0.1f, 100.0f);
 
-			int transformLocation = glGetUniformLocation(myShader.program, "transformMatrix");
-			glUniformMatrix4fv(transformLocation, 1, GL_FALSE, glm::value_ptr(model));
+		//int transformLocation = glGetUniformLocation(myShader.program, "transformMatrix");
+		//glUniformMatrix4fv(transformLocation, 1, GL_FALSE, glm::value_ptr(model));
 
-			int projectionLocation = glGetUniformLocation(myShader.program, "projectionMatrix");
-			glUniformMatrix4fv(projectionLocation, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
+		//int projectionLocation = glGetUniformLocation(myShader.program, "projectionMatrix");
+		//glUniformMatrix4fv(projectionLocation, 1, GL_FALSE, glm::value_ptr(projectionMatrix));
 
-			int viewLocation = glGetUniformLocation(myShader.program, "viewMatrix");
-			glUniformMatrix4fv(viewLocation, 1, GL_FALSE, glm::value_ptr(viewMatrix));
+		//int viewLocation = glGetUniformLocation(myShader.program, "viewMatrix");
+		//glUniformMatrix4fv(viewLocation, 1, GL_FALSE, glm::value_ptr(viewMatrix));
 
-			myModel->Draw(myShader);
-		//}
-		//glBindTexture(GL_TEXTURE_2D, 0);						// 解绑定 纹理
-
+		//myModel->Draw(myShader);
 
 		glfwSwapBuffers(this->window.GetWindow());
 	}
@@ -187,9 +206,87 @@ void Engine::KeyController()
 		camera->ProcessKeyboard(DOWNWARD, deltaTime);
 }
 
+void Engine::PackData(string name) {
+	FILE* file = fopen(name.c_str(), "wb");
+	if (!file) {
+		perror("文件打开失败");
+		return;
+	}
+	
+	int index = 0;
+	for (auto mesh : myModel->GetMeshes()) {
+		for (auto c : ((NaniteMesh*)mesh)->clusters) {
+			c.groupId += index;
+			clusters.push_back(c);
+		}
+		index += clusterGroups.size();
+		clusterGroups.insert(clusterGroups.end(), ((NaniteMesh*)myModel->GetMeshes()[0])->clusterGroups.begin(), ((NaniteMesh*)myModel->GetMeshes()[0])->clusterGroups.end());
+	}
+
+	size_t count = clusters.size();
+	fwrite(&count, sizeof(size_t), 1, file);
+	
+	for (auto c : clusters) {
+		vec4 lodBounds = vec4(c.lodBounds.center, c.lodBounds.radius);
+		vec4 parentLodBounds = vec4(clusterGroups[c.groupId].lodBounds.center, clusterGroups[c.groupId].lodBounds.radius);
+		fwrite(&lodBounds, sizeof(lodBounds), 1, file);
+		fwrite(&parentLodBounds, sizeof(parentLodBounds), 1, file);
+		fwrite(&c.lodError, sizeof(f32), 1, file);
+		fwrite(&clusterGroups[c.groupId].maxParentLodError, sizeof(f32), 1, file);
+		fwrite(&c.mipLevel, sizeof(u32), 1, file);
+		fwrite(&c.groupId, sizeof(u32), 1, file);
+
+		//写入顶点
+		size_t vSize = c.verts.size();
+		fwrite(&vSize, sizeof(size_t), 1, file);
+		fwrite(c.verts.data(), sizeof(vec3), vSize, file);
+
+		//写入索引
+		size_t iSize = c.indexes.size();
+		fwrite(&iSize, sizeof(size_t), 1, file);
+		fwrite(c.indexes.data(), sizeof(u32), iSize, file);
+	}
+
+	fclose(file);
+}
 void Engine::LoadModelPath(string path)
 {
 	this->modelPath = "Model/" + path;
+}
+
+void Engine::ReadPackData(string name)
+{
+	FILE* file = fopen(name.c_str(), "rb");
+	if (!file) {
+		perror("文件打开失败");
+		return;
+	}
+
+	size_t numCluster;
+	fread(&numCluster, sizeof(size_t), 1, file);
+
+	readClusters = vector<PackedCluster>(numCluster);
+
+	for (auto& c : readClusters) {
+		fread(&c.lodBounds, sizeof(vec4), 1, file);
+		fread(&c.parentLodBounds, sizeof(vec4), 1, file);
+		fread(&c.lodError, sizeof(f32), 1, file);
+		fread(&c.maxParentLodError, sizeof(f32), 1, file);
+		fread(&c.mipLevel, sizeof(u32), 1, file);
+		fread(&c.groupId, sizeof(u32), 1, file);
+
+		size_t vSize;
+		fread(&vSize, sizeof(size_t), 1, file);
+		c.verts.resize(vSize);
+		fread(c.verts.data(), sizeof(vec3), vSize, file);
+
+		size_t iSize;
+		fread(&iSize, sizeof(size_t), 1, file);
+		c.indexes.resize(iSize);
+		fread(c.indexes.data(), sizeof(u32), iSize, file);
+	}
+
+	fclose(file);
 }
 
 

@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Shaders.h.obj",
+            "outputs": [
+                "E:\\VsProject\\Nanite\\OpenGLNanite\\OpenGL_Nanite\\x64\\Release\\vc143.pdb",
+                "x64\\Release\\",
+                "E:\\VsProject\\Nanite\\OpenGLNanite\\OpenGL_Nanite\\x64\\Release\\Shaders.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "Shaders.h",
+                    "source-path": "e:\\vsproject\\nanite\\openglnanite\\opengl_nanite\\shaders.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

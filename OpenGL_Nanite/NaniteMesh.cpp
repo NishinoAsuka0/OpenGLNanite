@@ -1,63 +1,64 @@
 #include "NaniteMesh.h"
 
-u32 AsUint(f32 x) {
-	return *((u32*)&x);
-};
+//u32 AsUint(f32 x) {
+//	return *((u32*)&x);
+//};
 
-void PackingVirtualMesh(const NaniteMesh& vm, vector<u32>& packedData) {
-	// vector<u32> packed_data;
-	packedData.clear();
+//void PackingVirtualMesh(const NaniteMesh& vm, vector<u32>& packedData) {
+//	// vector<u32> packed_data;
+//	packedData.clear();
+//
+//	packedData.push_back(vm.clusters.size()); //num cluster
+//	packedData.push_back(0);
+//	packedData.push_back(0);
+//	packedData.push_back(0);
+//	for (auto& cluster : vm.clusters) {
+//		packedData.push_back(cluster.verts.size()); //num vert
+//		packedData.push_back(0); //v data ofs
+//		packedData.push_back(cluster.indexes.size() / 3); //num tri
+//		packedData.push_back(0); //t data ofs
+//
+//		packedData.push_back(AsUint(cluster.lodBounds.center.x)); //lod bounds
+//		packedData.push_back(AsUint(cluster.lodBounds.center.y));
+//		packedData.push_back(AsUint(cluster.lodBounds.center.z));
+//		packedData.push_back(AsUint(cluster.lodBounds.radius));
+//
+//		Sphere parentLodBounds = vm.clusterGroups[cluster.groupId].lodBounds;
+//		f32 maxParentLodError = vm.clusterGroups[cluster.groupId].maxParentLodError;
+//		packedData.push_back(AsUint(parentLodBounds.center.x)); //parent lod bounds
+//		packedData.push_back(AsUint(parentLodBounds.center.y));
+//		packedData.push_back(AsUint(parentLodBounds.center.z));
+//		packedData.push_back(AsUint(parentLodBounds.radius));
+//
+//		packedData.push_back(AsUint(cluster.lodError));
+//		packedData.push_back(AsUint(maxParentLodError));
+//		packedData.push_back(cluster.groupId);
+//		packedData.push_back(cluster.mipLevel);
+//	}
+//	u32 i = 0;
+//	for (auto& cluster : vm.clusters) {
+//		u32 ofs = 4 + 16 * i;
+//		packedData[ofs + 1] = packedData.size();
+//		for (vec3 p : cluster.verts) {
+//			packedData.push_back(AsUint(p.x));
+//			packedData.push_back(AsUint(p.y));
+//			packedData.push_back(AsUint(p.z));
+//		}
+//
+//		packedData[ofs + 3] = packedData.size();
+//		for (u32 i = 0; i < cluster.indexes.size() / 3; i++) { //tri data
+//			u32 i0 = cluster.indexes[i * 3];
+//			u32 i1 = cluster.indexes[i * 3 + 1];
+//			u32 i2 = cluster.indexes[i * 3 + 2];
+//			//assert(i0 < 256 && i1 < 256 && i2 < 256);
+//
+//			u32 packedTri = (i0 | (i1 << 8) | (i2 << 16));
+//			packedData.push_back(packedTri);
+//		}
+//		i++;
+//	}
+//}
 
-	packedData.push_back(vm.clusters.size()); //num cluster
-	packedData.push_back(0);
-	packedData.push_back(0);
-	packedData.push_back(0);
-	for (auto& cluster : vm.clusters) {
-		packedData.push_back(cluster.verts.size()); //num vert
-		packedData.push_back(0); //v data ofs
-		packedData.push_back(cluster.indexes.size() / 3); //num tri
-		packedData.push_back(0); //t data ofs
-
-		packedData.push_back(AsUint(cluster.lodBounds.center.x)); //lod bounds
-		packedData.push_back(AsUint(cluster.lodBounds.center.y));
-		packedData.push_back(AsUint(cluster.lodBounds.center.z));
-		packedData.push_back(AsUint(cluster.lodBounds.radius));
-
-		Sphere parentLodBounds = vm.clusterGroups[cluster.groupId].lodBounds;
-		f32 maxParentLodError = vm.clusterGroups[cluster.groupId].maxParentLodError;
-		packedData.push_back(AsUint(parentLodBounds.center.x)); //parent lod bounds
-		packedData.push_back(AsUint(parentLodBounds.center.y));
-		packedData.push_back(AsUint(parentLodBounds.center.z));
-		packedData.push_back(AsUint(parentLodBounds.radius));
-
-		packedData.push_back(AsUint(cluster.lodError));
-		packedData.push_back(AsUint(maxParentLodError));
-		packedData.push_back(cluster.groupId);
-		packedData.push_back(cluster.mipLevel);
-	}
-	u32 i = 0;
-	for (auto& cluster : vm.clusters) {
-		u32 ofs = 4 + 16 * i;
-		packedData[ofs + 1] = packedData.size();
-		for (vec3 p : cluster.verts) {
-			packedData.push_back(AsUint(p.x));
-			packedData.push_back(AsUint(p.y));
-			packedData.push_back(AsUint(p.z));
-		}
-
-		packedData[ofs + 3] = packedData.size();
-		for (u32 i = 0; i < cluster.indexes.size() / 3; i++) { //tri data
-			u32 i0 = cluster.indexes[i * 3];
-			u32 i1 = cluster.indexes[i * 3 + 1];
-			u32 i2 = cluster.indexes[i * 3 + 2];
-			//assert(i0 < 256 && i1 < 256 && i2 < 256);
-
-			u32 packedTri = (i0 | (i1 << 8) | (i2 << 16));
-			packedData.push_back(packedTri);
-		}
-		i++;
-	}
-}
 
 
 void LogClusterSize(Cluster* clusters, u32 begin, u32 end) {
@@ -171,6 +172,9 @@ void NaniteMesh::SetUpMesh()
 	int i = 0;
 	if (drawMode == 0 || drawMode == 1) {
 		for (auto& cluster : clusters) {
+			if (cluster.mipLevel != 1) {
+				continue;
+			}
 			if (drawMode == 0) {
 				cluster.color = vector<vec3>(0);
 				for (u32 i = 0; i < cluster.verts.size(); ++i) {
@@ -220,6 +224,7 @@ void NaniteMesh::SetUpMesh()
 	}
 	if (drawMode == 2) {
 		for (auto& cgroup : clusterGroups) {
+			if (cgroup.mipLevel != 1)	continue;
 			vec3 groupColor = vec3((f32)(rand() % 255) / 255.0f, (f32)(rand() % 255) / 255.0f, (f32)(rand() % 255) / 255.0f);
 			for (auto clusterId : cgroup.clusters) {
 				auto& cluster = clusters[clusterId];
@@ -270,6 +275,7 @@ void NaniteMesh::Draw(Shader& shader)
 	int i = 0;
 	firstDraw = false;
 	for (auto cluster : clusters) {
+		if (cluster.mipLevel != 1)	continue;
 		glBindVertexArray(VAO[i]);
 		if (cluster.indexes.size() != 0) {
 			glDrawElements(GL_TRIANGLES, static_cast<unsigned int>(cluster.indexes.size()), GL_UNSIGNED_INT, 0);

@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Release\\Shaders.obj",
+            "outputs": [
+                "x64\\Release\\Shaders.h_A65334DEDBFC1B0.ifc.dt.module.json",
+                "x64\\Release\\Shaders.h_A65334DEDBFC1B0.ifc.dt.d.json",
+                "x64\\Release\\Shaders.h.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "E:\\VsProject\\Nanite\\OpenGLNanite\\OpenGL_Nanite\\Shaders.h",
+                    "source-path": "e:\\vsproject\\nanite\\openglnanite\\opengl_nanite\\shaders.h",
+                    "lookup-method": "absolute"
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

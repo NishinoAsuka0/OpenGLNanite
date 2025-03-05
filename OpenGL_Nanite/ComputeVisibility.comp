@@ -1,0 +1,86 @@
+#version 460 core
+layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
+// Compute Shader 用于根据摄像机位置进行 LOD 切换和可见性判断并生成间接绘制命令
+
+struct GPUCluster {
+    vec4 lodBounds;         // xyz 为中心，w 为半径
+    vec4 parentLodBounds;
+    uint vertOffset;
+    uint indexOffset;
+    uint groupId;
+    uint mipLevel;
+    float lodError;
+    float maxParentLodError;
+    uint visible;
+    uint indexCount;
+};
+
+layout(std430, binding = 0) buffer ClusterBuffer {
+    GPUCluster clusters[];
+};
+
+struct DrawElementsIndirectCommand {
+    uint count;
+    uint instanceCount;
+    uint firstIndex;
+    uint baseVertex;
+    uint baseInstance;
+};
+
+layout(std430, binding = 1) buffer IndirectCommandBuffer {
+    DrawElementsIndirectCommand commands[];
+};
+
+layout(std430, binding = 2) buffer CommandCounter {
+    uint counter;
+};
+
+layout(std430, binding = 3) buffer TriangleCounter {
+    uint triCount;
+};
+
+uniform mat4 uViewMat;
+uniform vec4 frustumPlanes[6];
+uniform sampler2D depthTexture;
+
+
+// 视锥剔除
+bool IsInFrustum(vec3 center, float radius) {
+    for (int i = 0; i < 6; i++) {
+        if (dot(frustumPlanes[i], vec4(center, 1.0)) + radius < 0)
+            return false;
+    }
+    return true;
+}
+
+bool CheckLod(vec4 bounds,float error){
+    vec3 p=(uViewMat*vec4(bounds.xyz,1)).xyz;
+    float d=max(length(p)-bounds.w,0);
+    float theta=radians(40)/1080.0f;
+    return theta*d>=error;
+}
+
+void main()
+{
+    uint id = gl_GlobalInvocationID.x;
+    // 假设 dispatch 数量正好为 Cluster 数量
+    GPUCluster cluster = clusters[id];
+    bool parentChk=CheckLod(cluster.parentLodBounds,cluster.maxParentLodError);
+    bool clusterChk=CheckLod(cluster.lodBounds,cluster.lodError);
+    if (!parentChk && clusterChk && IsInFrustum(cluster.lodBounds.xyz, cluster.lodBounds.w))
+    {
+        clusters[id].visible = 1;
+        // 使用原子计数器获取当前写入命令数组的索引
+        uint index = atomicAdd(counter, 1);
+        commands[index].count = cluster.indexCount;
+        commands[index].instanceCount = 1;
+        commands[index].firstIndex = cluster.indexOffset;
+        commands[index].baseVertex = cluster.vertOffset;
+        commands[index].baseInstance = id;
+        atomicAdd(triCount, cluster.indexCount/3);
+    }
+    else
+    {
+        clusters[id].visible = 0;
+    }
+}

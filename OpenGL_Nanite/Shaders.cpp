@@ -1,7 +1,54 @@
 #include "Shaders.h"
 
+Shader::Shader(GLchar* computePath)
+{
+	type = 1;
+	string computeCode;
+	ifstream cShaderFile;
+	cShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
+
+	try
+	{
+		cShaderFile.open(computePath);
+		std::stringstream cShaderStream;
+		cShaderStream << cShaderFile.rdbuf();
+		cShaderFile.close();
+		computeCode = cShaderStream.str();
+	}
+	catch (std::ifstream::failure& e)
+	{
+		std::cerr << "Compute Shader 文件读取失败: " << e.what() << std::endl;
+	}
+
+	const char* cShaderCode = computeCode.c_str();
+	int success;
+	char infoLog[512];
+
+	computeShader = glCreateShader(GL_COMPUTE_SHADER);
+	glShaderSource(computeShader, 1, &cShaderCode, nullptr);
+	glCompileShader(computeShader);
+	glGetShaderiv(computeShader, GL_COMPILE_STATUS, &success);
+	if (!success)
+	{
+		glGetShaderInfoLog(computeShader, 512, nullptr, infoLog);
+		std::cerr << "Compute Shader 编译错误:\n" << infoLog << std::endl;
+	}
+
+	program = glCreateProgram();
+	glAttachShader(program, computeShader);
+	glLinkProgram(program);
+	glGetProgramiv(program, GL_LINK_STATUS, &success);
+	if (!success)
+	{
+		glGetProgramInfoLog(program, 512, nullptr, infoLog);
+		std::cerr << "Compute Shader 程序链接错误:\n" << infoLog << std::endl;
+	}
+	glDeleteShader(computeShader);
+}
+
 Shader::Shader(GLchar* vertexPath, GLchar* fragmentPath)
 {
+	type = 0;
 	//文件读取系列的变量定义
 	string vertexCode;
 	string fragmentCode;
@@ -78,14 +125,23 @@ Shader::Shader(GLchar* vertexPath, GLchar* fragmentPath)
 
 Shader::~Shader()
 {
-	glDetachShader(this->program, this->vertexShader);
-	glDetachShader(this->program, this->fragShader);
-	glDeleteShader(this->vertexShader);
-	glDeleteShader(this->fragShader);
-	glDeleteProgram(this->program);
+	if (type == 0) {
+		glDetachShader(this->program, this->vertexShader);
+		glDetachShader(this->program, this->fragShader);
+		glDeleteShader(this->vertexShader);
+		glDeleteShader(this->fragShader);
+		glDeleteProgram(this->program);
+	}
+	if (type == 1) {
+		glDetachShader(this->program, this->computeShader);
+		glDeleteShader(this->computeShader);
+		glDeleteProgram(this->program);
+	}
 }
 
 void Shader::Use()
 {
 	glUseProgram(this->program);
 }
+
+

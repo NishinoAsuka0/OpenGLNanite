@@ -1,12 +1,13 @@
 #pragma once
 #include<iostream>
-#include"openGLwin.h"
-#include"Shaders.h"
-#include"Camera.h"
-#include"Mesh.h"
+#include "openGLwin.h"
+#include "Shaders.h"
+#include "Camera.h"
+#include "Mesh.h"
+#include "Render.h"
+#include "co/fs.h"
 #include<mutex>
 using namespace std;
-
 
 class Engine {
 private:
@@ -21,6 +22,10 @@ private:
 	GLfloat deltaTime;
 	GLfloat lastTime;
 	Camera* camera;
+	vector<Cluster>clusters;
+	vector<ClusterGroup>clusterGroups;
+	vector<PackedCluster>readClusters;
+
 public:
 	static shared_ptr<Engine> GetInstance();
 	void InitEngine();
@@ -29,6 +34,8 @@ public:
 	void SetWindowSize(int winHeight, int winWidth);
 	void KeyController();
 	void LoadModelPath(string path);
+	void ReadPackData(string name);
+	void PackData(string name);
 	//static void MouseCallBack(GLFWwindow* window, double xPos, double yPos);
 	Camera *GetCamera();
 };

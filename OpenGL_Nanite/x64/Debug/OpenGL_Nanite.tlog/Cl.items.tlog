@@ -6,6 +6,13 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp;E:\VsProject\Nanite\Op
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\glad.c;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\glad.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\HashTable.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\HashTable.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Heap.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Heap.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_demo.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_demo.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_draw.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_draw.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_impl_glfw.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_impl_glfw.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_impl_opengl3.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_impl_opengl3.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_tables.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_tables.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui_widgets.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\imgui_widgets.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Main.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Mesh.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Mesh.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\MeshSimplify.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\MeshSimplify.obj
@@ -13,5 +20,6 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp;E:\VsProject\Nanite\Ope
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\NaniteMesh.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\OpenGLwin.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\OpenGLwin.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Partitioner.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Partitioner.obj
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Render.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Shaders.cpp;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Shaders.obj
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Shaders.h;E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\x64\Debug\Shaders.h.obj

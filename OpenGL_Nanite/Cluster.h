@@ -26,6 +26,32 @@ struct Cluster {
     u32 groupId;
 };
 
+struct GPUCluster {
+    vec4 lodBounds;
+    vec4 parentLodBounds;
+    u32 vertOffset;
+    u32 indexOffset;
+    u32 groupId;
+    u32 mipLevel;
+    float lodError;
+    float maxParentLodError;
+    u32 visible;
+    u32 indexCount;
+};
+
+struct PackedCluster {
+    vector<vec3> verts;
+    vector<u32> indexes;
+    vec4 lodBounds;
+    vec4 parentLodBounds;
+    f32 lodError;
+    f32 maxParentLodError;
+    u32 mipLevel;
+    u32 groupId;
+};
+
+static_assert(sizeof(GPUCluster) == 64, "GPUCluster必须64字节对齐");
+
 struct ClusterGroup {
     //一组32个三角形
     static const u32 groupSize = 32;

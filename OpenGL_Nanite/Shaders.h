@@ -11,9 +11,12 @@ class Shader {
 private:
 	GLuint vertexShader;	//顶点着色器
 	GLuint fragShader;		//片元着色器
-
+	GLuint computeShader;	//计算着色器
+	u32 type;	//0为渲染着色器，1为计算着色器
 public: 
 	GLuint program;		//着色器程序ID
+	Shader() {};
+	Shader(GLchar* computePath);
 	Shader(GLchar* vertexPath, GLchar* fragmentPath);
 	~Shader();
 
