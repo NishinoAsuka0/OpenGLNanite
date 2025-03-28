@@ -51,7 +51,7 @@ void main()
 {
 	//ourColor = color;
 	uint vClusterID = uint(gl_BaseInstance);
-	uint vTriID = gl_VertexID/3;
+	uint vTriID = (gl_BaseInstance + gl_VertexID - clusters[vClusterID].indexOffset) / 3;
 	uint vGroupID = clusters[vClusterID].groupId;
 	uint vMipLevel = clusters[vClusterID].mipLevel;
 

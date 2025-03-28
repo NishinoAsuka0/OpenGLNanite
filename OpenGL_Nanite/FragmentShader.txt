@@ -1,9 +1,38 @@
 #version 460 core
 in vec3 ourColor;
+uniform uint viewMode;
 out vec4 FragColor;
+
+uint MurmurMix(uint Hash){
+	Hash^=Hash>>16;
+	Hash*=0x85ebca6b;
+	Hash^=Hash>>13;
+	Hash*=0xc2b2ae35;
+	Hash^=Hash>>16;
+	return Hash;
+}
+
+vec3 ToColor(uint idx)
+{
+	uint Hash = MurmurMix(idx+1);
+
+	vec3 color=vec3(
+		(Hash>>0)&255,
+		(Hash>>8)&255,
+		(Hash>>16)&255
+	);
+
+	return color*(1.0f/255.0f);
+}
+
 void main()
 {
-	FragColor = vec4(ourColor,1.0f);
+	uint triangleID = gl_PrimitiveID;
+	vec3 color = ToColor(triangleID);
+	if(viewMode != 0){
+		color = ourColor;
+	}
+    FragColor = vec4(color, 1.0f);
 	//vec3 c=mix(ourColor,vec3(1),0.2);
 	//FragColor = vec4(c,1.0f);
 }

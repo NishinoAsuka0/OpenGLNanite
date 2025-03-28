@@ -42,7 +42,7 @@ public:
     void SetViewMode(u32 viewMode);
 
     void SetClusterCount(u32 clusterCount);
-
+    void SetTriCount(u32 triCount);
     void GenerateClusters(vector<PackedCluster>&clusters);
 private:
     // 初始化顶点/索引和 SSBO 缓冲区
@@ -88,6 +88,7 @@ private:
 
     // 当前 Cluster 数量
     unsigned int clusterCount;
+    unsigned int triCount;
 
     //帧率
     float lastTime = 0.0f;

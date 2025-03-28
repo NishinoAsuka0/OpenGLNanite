@@ -24,7 +24,7 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\MeshSimplify.h(37,17): warning C4
   (编译源文件“Render.cpp”)
   
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(13,23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(185,38): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(186,38): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(187,39): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(210,38): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(211,38): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(212,39): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
   OpenGL_Nanite.vcxproj -> E:\VsProject\Nanite\OpenGLNanite\x64\Debug\OpenGL_Nanite.exe

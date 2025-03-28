@@ -1,0 +1,90 @@
+F0315 11:48:30.690] SIGABRT: aborted
+00007FFE04369EA7 (ucrtbased): (filename not available): raise
+00007FFE0436580E (ucrtbased): (filename not available): setmbcp
+00007FFE043665E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE04368036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE043664C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE04354821 (ucrtbased): (filename not available): _threadid
+00007FFE043549D3 (ucrtbased): (filename not available): _threadid
+00007FFE0436BACD (ucrtbased): (filename not available): abort
+00007FFE04371745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE043713B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE0436F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE04371CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart
+F0315 11:49:58.956] SIGABRT: aborted
+00007FFE02139EA7 (ucrtbased): (filename not available): raise
+00007FFE0213580E (ucrtbased): (filename not available): setmbcp
+00007FFE021365E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE02138036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE021364C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE02124821 (ucrtbased): (filename not available): _threadid
+00007FFE021249D3 (ucrtbased): (filename not available): _threadid
+00007FFE0213BACD (ucrtbased): (filename not available): abort
+00007FFE02141745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE021413B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE0213F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE02141CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart
+F0315 11:57:21.480] SIGABRT: aborted
+00007FFE01F29EA7 (ucrtbased): (filename not available): raise
+00007FFE01F2580E (ucrtbased): (filename not available): setmbcp
+00007FFE01F265E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE01F28036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE01F264C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE01F14821 (ucrtbased): (filename not available): _threadid
+00007FFE01F149D3 (ucrtbased): (filename not available): _threadid
+00007FFE01F2BACD (ucrtbased): (filename not available): abort
+00007FFE01F31745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F313B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F2F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F31CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart

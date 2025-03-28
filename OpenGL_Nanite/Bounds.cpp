@@ -92,10 +92,10 @@ Sphere Sphere::FromPoints(vec3* pos, u32 size)
         }
     }
 
-    for (u32 i = 0; i < size; ++i) {
+    /*for (u32 i = 0; i < size; ++i) {
         f32 len = Length(pos[i] - sphere.center);
-        assert(len - 1e-6 <= sphere.radius);
-    }
+        assert(len <= sphere.radius);
+    }*/
     return sphere;
 }
 

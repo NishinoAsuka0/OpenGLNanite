@@ -40,16 +40,36 @@ void InitImGui(GLFWwindow* window) {
     ImGui_ImplOpenGL3_Init("#version 460");
 }
 
-void RenderOverlay(float fps, int triangleCount, int nowClusterCount, int allClusterCount) {
+void RenderOverlay(float fps, int triangleCount, int nowClusterCount, int allClusterCount, int allTriCount, int viewMode) {
     ImGui_ImplOpenGL3_NewFrame();
     ImGui_ImplGlfw_NewFrame();
     ImGui::NewFrame();
-
-    ImGui::Begin("Performance");
+    ImGui::SetNextWindowSize(ImVec2(220, 135), ImGuiCond_Once);
+    ImGui::Begin("Information");
     ImGui::Text("FPS: %.1f", fps);
     ImGui::Text("Triangles: %d", triangleCount);
+    ImGui::Text("All Triangles: %d", allTriCount);
     ImGui::Text("Now Clusters: %d", nowClusterCount);
     ImGui::Text("All Clusters: %d", allClusterCount);
+    string modeText = "Now viewMode is ";
+    switch (viewMode)
+    {
+        case 0:
+            modeText += "triangleID";
+            break;
+        case 1:
+            modeText += "clusterID";
+            break;
+        case 2:
+            modeText += "clusterGroupID";
+            break;
+        case 3:
+            modeText += "LODLevel";
+            break;
+    default:
+        break;
+    }
+    ImGui::Text(modeText.c_str());
     ImGui::End();
 
     ImGui::Render();
@@ -166,6 +186,11 @@ void Renderer::SetClusterCount(u32 clusterCount)
     this->clusterCount = clusterCount;
 }
 
+void Renderer::SetTriCount(u32 triCount)
+{
+    this->triCount = triCount;
+}
+
 void Renderer::GenerateClusters(vector<PackedCluster>& clusters)
 {
     // 为示例生成两个 Cluster，实际项目中你需要生成或加载真实数据
@@ -186,11 +211,11 @@ void Renderer::GenerateClusters(vector<PackedCluster>& clusters)
         gc.vertOffset = vertices.size();
         gc.indexCount = c.indexes.size();
         gc.visible = 0;
-        cout << vertices.size() << endl;
+        //cout << vertices.size() << endl;
         vertices.insert(vertices.end(), c.verts.begin(), c.verts.end());
-        cout << indices.size() << endl;
+        //cout << indices.size() << endl;
         indices.insert(indices.end(), c.indexes.begin(), c.indexes.end());
-        cout << gpuClusters.size() << endl;
+        //cout << gpuClusters.size() << endl;
         gpuClusters.push_back(gc);
     }
     
@@ -294,11 +319,11 @@ void Renderer::Render()
     //从 ssboTriCount读取三角形数量
     glBindBuffer(GL_SHADER_STORAGE_BUFFER, ssboTriCount);
     counterPtr = (unsigned int*)glMapBufferRange(GL_SHADER_STORAGE_BUFFER, 0, sizeof(unsigned int), GL_MAP_READ_BIT);
-    unsigned int triCount = *counterPtr;
+    unsigned int drawTriCount = *counterPtr;
     glUnmapBuffer(GL_SHADER_STORAGE_BUFFER);
     glBindBuffer(GL_SHADER_STORAGE_BUFFER, 0);
 
-    RenderOverlay(this->fps, triCount, drawCount, clusterCount);
+    RenderOverlay(this->fps, drawTriCount, drawCount, clusterCount, this->triCount, viewMode);
     // 调用间接绘制，参数为命令个数
     glMultiDrawElementsIndirect(GL_TRIANGLES, GL_UNSIGNED_INT, 0, drawCount, 0);
 

@@ -129,9 +129,14 @@ void Engine::Draw()
 		PackData(dataName);
 	}
 	ReadPackData(dataName);
+	u32 triCount = 0;
+	for (auto rc : readClusters) {
+		triCount += rc.indexes.size() / 3;
+	}
 	render.SetScreenSize(this->window.GetWindow(), screenWidth, screenHeight);
 	render.SetCamera(camera);
 	render.SetClusterCount(readClusters.size());
+	render.SetTriCount(triCount);
 	render.Init();
 	render.GenerateClusters(readClusters);
 	// draw loop »­Í¼Ñ­»·
