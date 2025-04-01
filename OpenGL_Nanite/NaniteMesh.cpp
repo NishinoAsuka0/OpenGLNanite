@@ -33,11 +33,33 @@ void NaniteMesh::Build()
 	cout << "Fix up Mesh: " << endl;
 	cout << "Mesh verts: " << vertices.size() 
 		 << " Mesh triangles: " << indices.size() / 3 << endl;
+
+	/*FILE* file = fopen("Model/test.txt", "rb");
+	
+	size_t psize;
+	size_t isize;
+	fread(&psize, sizeof(size_t), 1, file);
+	vector<vec3>pos(psize);
+	for (auto& p : pos) {
+		fread(&p.x, sizeof(float), 1, file);
+		fread(&p.y, sizeof(float), 1, file);
+		fread(&p.z, sizeof(float), 1, file);
+		p.x = p.x / 500.0f;
+		p.y = p.y / 500.0f;
+		p.z = p.z / 500.0f;
+	}
+	fread(&isize, sizeof(size_t), 1, file);
+	vector<u32>idx(isize);
+	for (auto& p : idx) {
+		fread(&p, sizeof(unsigned int), 1, file);
+	}*/
 	//将三角形分簇
+	
 	ClusterTriangles(vertices, indices, clusters);
 
 	u32 levelOffset = 0;
 	u32 mipLevel = 0;
+	u32 preNumLevelClusters = 0;
 
 	cout << "Begin building cluster DAG" << endl;
 
@@ -47,7 +69,7 @@ void NaniteMesh::Build()
 		LogClusterSize(clusters.data(), levelOffset, clusters.size());
 
 		u32 numLevelClusters = clusters.size() - levelOffset;
-		if (numLevelClusters < 1) break;
+		if (numLevelClusters == preNumLevelClusters) break;
 
 		u32 preClusterNum = clusters.size();
 		u32 preGroupNum = clusterGroups.size();
@@ -69,7 +91,7 @@ void NaniteMesh::Build()
 		for (u32 i = preGroupNum; i < clusterGroups.size(); ++i) {
 			BuildParentClusters(clusterGroups[i], clusters);
 		}
-
+		preNumLevelClusters = numLevelClusters;
 		levelOffset = preClusterNum;
 		mipLevel++;
 	}

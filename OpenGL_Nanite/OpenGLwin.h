@@ -14,7 +14,7 @@
 #include "VecMath.h"
 #include <cmath>
 #include <algorithm>
-#include "meshoptimier/src/meshoptimizer.h"
+//#include "meshoptimier/src/meshoptimizer.h"
 #include "metis.h"
 
 using namespace std;

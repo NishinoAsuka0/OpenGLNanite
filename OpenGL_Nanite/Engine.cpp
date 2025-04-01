@@ -292,6 +292,55 @@ void Engine::ReadPackData(string name)
 	}
 
 	fclose(file);
+	/*for (int i = 0; i <= 102; i++) {
+		string testname = "test/data" + std::to_string(i) + ".txt";
+
+		FILE* file = fopen(testname.c_str(), "rb");
+		if (!file) {
+			perror("文件打开失败");
+			return;
+		}
+
+		size_t numCluster;
+		fread(&numCluster, sizeof(size_t), 1, file);
+
+		vector<PackedCluster> readingClusters(numCluster);
+
+		for (auto& c : readingClusters) {
+			fread(&c.lodBounds, sizeof(vec4), 1, file);
+			c.lodBounds.x = c.lodBounds.x / 500.0f;
+			c.lodBounds.y = c.lodBounds.y / 500.0f;
+			c.lodBounds.z = c.lodBounds.z / 500.0f;
+			c.lodBounds.w = c.lodBounds.w / 500.0f;
+			fread(&c.parentLodBounds, sizeof(vec4), 1, file);
+			c.parentLodBounds.x = c.parentLodBounds.x / 500.0f;
+			c.parentLodBounds.y = c.parentLodBounds.y / 500.0f;
+			c.parentLodBounds.z = c.parentLodBounds.z / 500.0f;
+			c.parentLodBounds.w = c.parentLodBounds.w / 500.0f;
+			fread(&c.lodError, sizeof(f32), 1, file);
+			fread(&c.maxParentLodError, sizeof(f32), 1, file);
+			fread(&c.mipLevel, sizeof(u32), 1, file);
+			fread(&c.groupId, sizeof(u32), 1, file);
+
+			size_t vSize;
+			fread(&vSize, sizeof(size_t), 1, file);
+			c.verts.resize(vSize);
+			fread(c.verts.data(), sizeof(vec3), vSize, file);
+			for (auto& v : c.verts) {
+				v.x = v.x / 500.0f;
+				v.y = v.y / 500.0f;
+				v.z = v.z / 500.0f;
+			}
+			size_t iSize;
+			fread(&iSize, sizeof(size_t), 1, file);
+			c.indexes.resize(iSize);
+			fread(c.indexes.data(), sizeof(u32), iSize, file);
+		}
+		
+		readClusters.insert(readClusters.end(),readingClusters.begin(), readingClusters.end());
+		fclose(file);
+	}*/
+
 }
 
 

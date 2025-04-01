@@ -193,8 +193,6 @@ void Renderer::SetTriCount(u32 triCount)
 
 void Renderer::GenerateClusters(vector<PackedCluster>& clusters)
 {
-    // 为示例生成两个 Cluster，实际项目中你需要生成或加载真实数据
-    // 这里假设每个 Cluster 数据已经合并到一个大顶点、索引数组中
     vertices.clear();
     indices.clear();
     gpuClusters.clear();

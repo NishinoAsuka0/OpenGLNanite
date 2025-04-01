@@ -254,6 +254,8 @@ void BuildParentClusters(
     HashTable edgeHashTable(clusterGroup.externalEdges.size());
     u32 i = 0;
 
+    //cout << clusterGroup.externalEdges.size() << " " << pos.size() << endl;
+
     for (auto [cluster, edge] : clusterGroup.externalEdges) {
         auto& pos = clusters[cluster].verts;
         auto& idx = clusters[cluster].indexes;
@@ -265,8 +267,10 @@ void BuildParentClusters(
     }
 
     simplifier.Simplify((Cluster::clusterSize - 2) * (clusterGroup.clusters.size() / 2));
+    //std::cout << pos.size() << "," << idx.size() << " ";
     pos.resize(simplifier.RemainingNumVert());
     idx.resize(simplifier.RemainingNumTri() * 3);
+    //std::cout << pos.size() << "," << idx.size() << std::endl;
 
     maxParentLodError = max(maxParentLodError, sqrt(simplifier.MaxError()));
 
