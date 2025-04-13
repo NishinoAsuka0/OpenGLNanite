@@ -1,0 +1,227 @@
+#version 460 core
+layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
+// Compute Shader 用于根据摄像机位置进行 LOD 切换和可见性判断并生成间接绘制命令
+
+struct GPUCluster {
+    vec4 lodBounds;         // xyz 为中心，w 为半径
+    vec4 parentLodBounds;
+    uint vertOffset;
+    uint indexOffset;
+    uint groupId;
+    uint mipLevel;
+    float lodError;
+    float maxParentLodError;
+    uint visible;
+    uint indexCount;
+};
+
+layout(std430, binding = 0) buffer ClusterBuffer {
+    GPUCluster clusters[];
+};
+
+struct DrawElementsIndirectCommand {
+    uint count;
+    uint instanceCount;
+    uint firstIndex;
+    uint baseVertex;
+    uint baseInstance;
+};
+
+layout(std430, binding = 1) buffer IndirectCommandBuffer {
+    DrawElementsIndirectCommand commands[];
+};
+
+layout(std430, binding = 2) buffer CommandCounter {
+    uint counter;
+};
+
+layout(std430, binding = 3) buffer SecondIndirectCommandBuffer {
+    DrawElementsIndirectCommand secondCommands[];
+};
+
+layout(std430, binding = 4) buffer SecondCommandCounter {
+    uint secondCounter;
+};
+
+layout(std430, binding = 5) buffer TriangleCounter {
+    uint triCount;
+};
+
+uniform mat4 uViewMat;
+uniform mat4 uProjMat;
+uniform mat4 uPrevProjMat;
+uniform mat4 uPrevViewMat;
+uniform vec4 frustumPlanes[6];
+uniform sampler2D prevDepthTexture;
+uniform sampler2D curDepthTexture;
+uniform int isFirstFrame;  //标识是否为第一帧
+uniform int occludeMode;
+uniform vec2 uScreenSize;
+
+bool RoughOccluded(vec3 centerWorldPos, float radius) {
+
+    vec4 prevViewPos = uPrevViewMat * vec4(centerWorldPos, 1.0);
+    if (prevViewPos.z >= 0.0) return false; // 背面剔除
+
+    // 转换到上一帧的裁剪空间
+    vec4 prevClipPos = uPrevProjMat * prevViewPos;
+    if (prevClipPos.w <= 0.0) return false; // 视锥外剔除
+
+    // 计算 NDC 和纹理 UV
+    vec3 prevNdc = prevClipPos.xyz / prevClipPos.w;
+    vec2 uvCenter = prevNdc.xy * 0.5 + 0.5;
+    uvCenter.y = 1.0 - uvCenter.y; // 翻转 Y 轴
+
+    if (any(lessThan(uvCenter, vec2(0.0))) || any(greaterThan(uvCenter, vec2(1.0))))
+        return false;
+
+    // 从深度纹理获取深度并转换到NDC
+    float prevDepth = texture(prevDepthTexture, uvCenter).r;
+    float prevDepthNDC = prevDepth * 2.0 - 1.0; // 转换到NDC的Z范围[-1, 1]
+
+    // 正确计算视图空间Z
+    float prevProjA = uPrevProjMat[2][2];
+    float prevProjB = uPrevProjMat[2][3];
+    float prevViewZ = -prevProjB / (prevDepthNDC + prevProjA); // 修正分母符号
+
+    // 计算视图空间中的球体中心和半径
+    vec3 prevViewCenter = prevViewPos.xyz / prevViewPos.w;
+    vec3 prevViewEdge = (uPrevViewMat * vec4(centerWorldPos + vec3(radius, 0, 0), 1.0)).xyz;
+    prevViewEdge /= prevViewPos.w;
+    float prevViewRadius = length(prevViewEdge - prevViewCenter);
+
+    float sphereZNear = prevViewCenter.z - prevViewRadius;
+    return sphereZNear < prevViewZ;
+}
+
+
+bool FinalOccluded(vec3 centerWorldPos, float radius) {
+    if (isFirstFrame == 1) return false;
+
+    //转换到当前视图空间
+    vec4 viewPos = uViewMat * vec4(centerWorldPos, 1.0);
+    if (viewPos.z >= 0.0) return false; // 背面剔除
+    vec3 viewCenter = viewPos.xyz / viewPos.w;
+    float viewZ = -viewCenter.z; // 正深度
+
+    //计算视图空间半径
+    vec3 viewEdge = (uViewMat * vec4(centerWorldPos + vec3(radius,0,0), 1.0)).xyz;
+    viewEdge /= viewPos.w; // 归一化
+    float viewRadius = length(viewEdge - viewCenter);
+
+    //转换到屏幕空间
+    vec4 clipPos = uProjMat * vec4(viewCenter, 1.0);
+    vec3 ndc = clipPos.xyz / clipPos.w;
+    vec2 uvCenter = ndc.xy * 0.5 + 0.5;
+    uvCenter.y = 1.0 - uvCenter.y;
+
+    //计算屏幕空间半径
+    vec4 clipEdge = uProjMat * vec4(viewCenter + vec3(viewRadius,0,0), 1.0);
+    vec2 screenEdge = (clipEdge.xy / clipEdge.w) * 0.5 + 0.5;
+    float screenRadius = length(screenEdge - uvCenter) * uScreenSize.x;
+
+    //采样参数
+    const int sampleGridSize = 4;
+    const float occlusionThreshold = 0.6;
+    int occludedCount = 0;
+    int totalSamples = 0;
+
+    for (int y = 0; y < sampleGridSize; ++y) {
+        for (int x = 0; x < sampleGridSize; ++x) {
+            vec2 offset = vec2(x, y) / (sampleGridSize - 1.0) * 2.0 - 1.0;
+            vec2 sampleUv = uvCenter + offset * screenRadius / uScreenSize;
+
+            // 严格边界检查
+            if (any(lessThan(sampleUv, vec2(0.0))) || any(greaterThan(sampleUv, vec2(1.0)))) {
+                continue;
+            }
+
+            totalSamples++;
+            float sampledDepth = texture(curDepthTexture, sampleUv).r;
+            if (sampledDepth >= 1.0) continue;
+
+            // 重建视图空间深度
+            float zNdc = sampledDepth * 2.0 - 1.0;
+            float projA = uProjMat[2][2];
+            float projB = uProjMat[2][3];
+            float sampleViewZ = - projB / (zNdc + projA);
+
+            // 判断遮挡
+            if (viewZ + viewRadius < sampleViewZ + 0.1) {
+                occludedCount++;
+            }
+        }
+    }
+
+    if (totalSamples == 0) return false;
+    float occlusionRatio = float(occludedCount) / float(totalSamples);
+    return occlusionRatio >= occlusionThreshold;
+}
+// 视锥剔除
+bool IsInFrustum(vec3 center, float radius) {
+    for (int i = 0; i < 6; i++) {
+        if (dot(frustumPlanes[i], vec4(center, 1.0)) + radius < 0)
+            return false;
+    }
+    return true;
+}
+
+bool CheckLod(vec4 bounds,float error){
+    vec3 p=(uViewMat*vec4(bounds.xyz,1)).xyz;
+    float d=max(length(p)-bounds.w,0);
+    float theta=radians(40)/1080.0f;
+    return theta*d>=error;
+}
+
+void main()
+{
+    uint id = gl_GlobalInvocationID.x;
+    // 假设 dispatch 数量正好为 Cluster 数量
+    GPUCluster cluster = clusters[id];
+    bool parentChk = CheckLod(cluster.parentLodBounds,cluster.maxParentLodError);
+    bool clusterChk = CheckLod(cluster.lodBounds,cluster.lodError);
+    if(occludeMode == 1){
+        if (!parentChk && clusterChk)
+        {
+            bool frustumChk = IsInFrustum(cluster.lodBounds.xyz, cluster.lodBounds.w);
+            bool occludedChk = RoughOccluded(cluster.lodBounds.xyz, cluster.lodBounds.w);
+            if((!occludedChk) && frustumChk){
+                clusters[id].visible = 1;
+                // 使用原子计数器获取当前写入命令数组的索引
+                uint index = atomicAdd(counter, 1);
+                commands[index].count = cluster.indexCount;
+                commands[index].instanceCount = 1;
+                commands[index].firstIndex = cluster.indexOffset;
+                commands[index].baseVertex = cluster.vertOffset;
+                commands[index].baseInstance = id;
+                atomicAdd(triCount, cluster.indexCount/3);
+            }
+        }
+        else
+        {
+            clusters[id].visible = 0;
+        }
+    }
+    else{
+        if (!parentChk && clusterChk && clusters[id].visible != 1)
+        {
+            bool frustumChk = IsInFrustum(cluster.lodBounds.xyz, cluster.lodBounds.w);
+            bool occludedChk = FinalOccluded(cluster.lodBounds.xyz, cluster.lodBounds.w);
+            if((!occludedChk) && frustumChk){
+                clusters[id].visible = 1;
+                // 使用原子计数器获取当前写入命令数组的索引
+                uint index = atomicAdd(secondCounter, 1);
+                secondCommands[index].count = cluster.indexCount;
+                secondCommands[index].instanceCount = 1;
+                secondCommands[index].firstIndex = cluster.indexOffset;
+                secondCommands[index].baseVertex = cluster.vertOffset;
+                secondCommands[index].baseInstance = id;
+                atomicAdd(triCount, cluster.indexCount/3);
+            }
+        }
+        else
+        {
+            clusters[id].visible = 0;
+        }
+    }
+}

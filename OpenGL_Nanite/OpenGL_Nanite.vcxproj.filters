@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\OpenGLWindow">
+      <UniqueIdentifier>{d720e1a1-e28d-4e94-8ef5-3498171353e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\OpenGLWindow">
+      <UniqueIdentifier>{92b8e5e5-5dfe-48c1-9bf8-f8dcac8051b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Buffers">
+      <UniqueIdentifier>{2f28fc43-4e48-4f0e-9f72-868d82674802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Buffers">
+      <UniqueIdentifier>{77ef5b8d-4774-4a79-9a7a-90e3f84ffe0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Camera">
+      <UniqueIdentifier>{1ca0c939-4f7e-4a6f-b3ef-6427946113d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Camera">
+      <UniqueIdentifier>{701a9b8e-c417-4489-a03f-8ab4b751034d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Shaders">
+      <UniqueIdentifier>{c5f1ed99-8303-456c-99f4-459cec91d05c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Shaders">
+      <UniqueIdentifier>{6a546dd7-50ff-4f3a-a95e-41132891dd7f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\NaniteMesh">
+      <UniqueIdentifier>{d1453142-7ed3-4b5d-ba20-7a30ded88ab6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\NaniteMesh">
+      <UniqueIdentifier>{c6f08073-6667-43e1-8634-ea96f023e207}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Math">
+      <UniqueIdentifier>{b517a9a3-778f-483e-92fe-d36742eb26bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Math">
+      <UniqueIdentifier>{46666663-6251-4ce3-9476-9756d7753aff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ImGui">
+      <UniqueIdentifier>{ecee6991-3d44-4ab2-836f-bc83c1514451}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ImGui">
+      <UniqueIdentifier>{e3c83ba0-386c-4bd8-bca2-594ce4e90914}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLwin.cpp">
+      <Filter>源文件\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders.h">
+      <Filter>头文件\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Shaders.cpp">
+      <Filter>源文件\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine.cpp">
+      <Filter>源文件\OpenGLWindow</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>源文件\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="HashTable.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Heap.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="BitArray.cpp">
+      <Filter>源文件\Math</Filter>
+    </ClCompile>
+    <ClCompile Include="Partitioner.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Bounds.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Cluster.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshSimplify.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="NaniteMesh.cpp">
+      <Filter>源文件\NaniteMesh</Filter>
+    </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Render.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_glfw.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_opengl3.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_tables.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>源文件\ImGui</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="OpenGLwin.h">
+      <Filter>头文件\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
+      <Filter>头文件\OpenGLWindow</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>头文件\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="BitArray.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="HashTable.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Types.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VecMath.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="VecType.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="Heap.h">
+      <Filter>头文件\Math</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshSimplify.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="NaniteMesh.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Bounds.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Cluster.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Partitioner.h">
+      <Filter>头文件\NaniteMesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Render.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_glfw.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_opengl3.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_opengl3_loader.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>头文件\ImGui</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="VertexShader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="FragmentShader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="DepthVertex.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="DepthFrag.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="CommonVshader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+    <Text Include="CommonFshader.txt">
+      <Filter>源文件\Shaders</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="ComputeVisibility.comp">
+      <Filter>源文件\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

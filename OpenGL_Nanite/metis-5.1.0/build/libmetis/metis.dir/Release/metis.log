@@ -1,0 +1,761 @@
+﻿  Building Custom Rule D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/libmetis/CMakeLists.txt
+  b64.c
+  blas.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/b64.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/blas.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(25,1): warning C4267: “=”: 从“size_t”转换到“char”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(25,1): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(26,1): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(26,1): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(27,1): warning C4267: “=”: 从“size_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(27,1): warning C4244: “初始化”: 从“double”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(28,1): warning C4244: “初始化”: 从“double”转换到“int64_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(29,1): warning C4244: “初始化”: 从“double”转换到“ssize_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\blas.c(32,1): warning C4244: “初始化”: 从“double”转换到“gk_idx_t”，可能丢失数据
+  csr.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/csr.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(470,16): warning C4267: “=”: 从“size_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(487,41): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(512,18): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(562,23): warning C4267: “=”: 从“size_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(794,18): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(811,45): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(837,18): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(854,43): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(945,43): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(953,43): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(988,33): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(995,33): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1187,12): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1277,33): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1294,29): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1302,35): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1343,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1345,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1370,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1372,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1408,19): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1410,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1413,28): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1423,19): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1425,21): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1428,28): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1440,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1453,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1466,30): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1466,30): warning C4305: “函数”: 从“double”到“float”截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1466,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1479,30): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1479,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1492,30): warning C4244: “函数”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1492,30): warning C4305: “函数”: 从“double”到“float”截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1492,29): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1505,26): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1534,23): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1566,18): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1571,23): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1707,32): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1708,32): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1718,32): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1719,32): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1763,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1765,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1796,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1828,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\csr.c(1990,11): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+  error.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/error.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  evaluate.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/evaluate.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c(34,32): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c(73,10): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c(101,16): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c(115,20): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\evaluate.c(131,10): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  fkvkselect.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/fkvkselect.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fkvkselect.c(27,12): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fkvkselect.c(29,18): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fkvkselect.c(91,12): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\fkvkselect.c(93,18): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  fs.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/fs.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  getopt.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/getopt.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(769,19): warning C4028: 形参 1 与声明不同
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(769,32): warning C4028: 形参 2 与声明不同
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(833,25): warning C4028: 形参 1 与声明不同
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(833,38): warning C4028: 形参 2 与声明不同
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(849,29): warning C4028: 形参 1 与声明不同
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\getopt.c(849,42): warning C4028: 形参 2 与声明不同
+  gkregex.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/gkregex.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(2287,24): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(3166,19): warning C4018: “<=”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(3334,48): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(3434,7): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(3435,10): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(4102,29): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(4986,25): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(5089,39): warning C4312: “类型强制转换”: 从“long”转换到更大的“void *”
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(6301,19): warning C4311: “类型强制转换”: 从“void *”到“long”的指针截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(6607,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(6822,27): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(6888,11): warning C4018: “>”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(6913,13): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7012,43): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7042,73): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7796,64): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7813,45): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7826,43): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gkregex.c(7840,43): warning C4267: “函数”: 从“size_t”转换到“int”，可能丢失数据
+  htable.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/htable.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(64,62): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(143,31): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(150,31): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(173,35): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(185,33): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(210,31): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\htable.c(220,31): warning C4244: “return”: 从“ssize_t”转换到“int”，可能丢失数据
+  io.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/io.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  itemsets.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/itemsets.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c(53,11): warning C4101: “i”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c(107,28): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c(110,51): warning C4244: “函数”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c(149,38): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\itemsets.c(169,28): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+  mcore.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/mcore.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\mcore.c(208,29): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\mcore.c(349,21): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\mcore.c(377,21): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  memory.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/memory.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(25,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(26,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(27,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(28,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(29,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(30,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(31,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(32,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(34,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(35,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(36,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(37,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(38,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(39,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(40,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(41,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(42,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(63,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\memory.c(87,14): warning C4018: “<”: 有符号/无符号不匹配
+  omp.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/omp.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  pdb.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/pdb.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  pqueue.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/pqueue.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(19,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(20,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(21,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(22,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(23,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\pqueue.c(24,1): warning C4018: “<”: 有符号/无符号不匹配
+  random.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/random.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  rw.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/rw.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\rw.c(96,18): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\rw.c(31,17): warning C4101: “k”: 未引用的局部变量
+  seq.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/seq.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c(56,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c(68,29): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c(107,16): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c(131,23): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\seq.c(150,16): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  sort.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/sort.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  string.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/string.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(46,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(47,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(49,15): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(162,18): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(165,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(181,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(262,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(299,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(378,25): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(435,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\string.c(436,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  timers.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/timers.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  tokenizer.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/tokenizer.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\tokenizer.c(28,11): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  auxapi.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/auxapi.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  balance.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/balance.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(23,40): warning C4244: “函数”: 从“real_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(68,30): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(94,48): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(136,38): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(143,38): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(43,65): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(43,59): warning C4101: “pass”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(196,30): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(218,32): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(256,34): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(171,65): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(171,59): warning C4101: “pass”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(315,11): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(377,51): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(441,55): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(284,9): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\balance.c(283,68): warning C4101: “pass”: 未引用的局部变量
+  bucketsort.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/bucketsort.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  checkgraph.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/checkgraph.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\checkgraph.c(178,18): warning C4101: “l”: 未引用的局部变量
+  coarsen.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/coarsen.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(38,43): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(101,43): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(151,23): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(151,16): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(151,27): warning C4101: “jjinc”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(305,18): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(278,23): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(278,16): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(278,27): warning C4101: “jjinc”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(440,27): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(440,16): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(533,17): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(540,32): warning C4267: “函数”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(548,44): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(519,20): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(782,30): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(624,23): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(913,30): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(1077,30): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\coarsen.c(935,26): warning C4101: “l”: 未引用的局部变量
+  compress.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/compress.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\compress.c(154,28): warning C4101: “padjwgt”: 未引用的局部变量
+  contig.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/contig.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(35,19): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(35,12): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(270,52): warning C4101: “wgt”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(455,38): warning C4244: “=”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(338,23): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(338,58): warning C4101: “other”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(534,24): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(534,31): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(605,24): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\contig.c(605,47): warning C4101: “me”: 未引用的局部变量
+  debug.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/debug.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(50,18): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(197,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(257,15): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(257,18): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(342,50): warning C4101: “bndind”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(341,42): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(341,50): warning C4101: “minvol”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(342,59): warning C4101: “bndptr”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(342,34): warning C4101: “pwgts”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(341,26): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\debug.c(341,36): warning C4101: “nbnd”: 未引用的局部变量
+  fm.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/fm.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(56,30): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(59,13): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(88,67): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(143,51): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(150,51): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(31,65): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(243,11): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(248,15): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(293,20): warning C4244: “=”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(366,28): warning C4244: “=”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(378,28): warning C4244: “=”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\fm.c(210,9): warning C4101: “me”: 未引用的局部变量
+  fortran.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/fortran.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  frename.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/frename.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  gklib.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/gklib.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(18,1): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(18,1): warning C4244: “初始化”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(19,1): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(24,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(25,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(26,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(27,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(33,1): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\gklib.c(34,1): warning C4018: “<”: 有符号/无符号不匹配
+  initpart.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/initpart.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(136,51): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(118,26): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(117,52): warning C4101: “from”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(117,19): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(118,20): warning C4101: “icut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(117,58): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(117,16): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(213,50): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(214,56): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(194,36): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(194,9): warning C4101: “from”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(196,28): warning C4101: “gain”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(194,30): warning C4101: “icut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(194,15): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(352,18): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(328,52): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(328,35): warning C4101: “from”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(328,19): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(328,16): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,48): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,31): warning C4101: “from”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,15): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,9): warning C4101: “i”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(388,25): warning C4101: “ncon”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(453,50): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(454,56): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(437,48): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(437,21): warning C4101: “from”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(439,28): warning C4101: “gain”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(437,42): warning C4101: “icut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(437,27): warning C4101: “me”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(573,36): warning C4101: “mincut”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\initpart.c(573,15): warning C4101: “k”: 未引用的局部变量
+  kmetis.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/kmetis.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kmetis.c(108,7): warning C4101: “status”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kmetis.c(105,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kmetis.c(174,12): warning C4101: “ntrials”: 未引用的局部变量
+  kwayfm.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/kwayfm.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(102,33): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(103,49): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(104,49): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(182,16): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(321,9): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(64,27): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(409,33): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(410,49): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(411,49): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(374,27): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(748,65): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+  kwayrefine.c
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(750,65): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(824,16): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(977,9): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(688,27): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(1087,65): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(1089,65): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(1030,27): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayfm.c(1465,35): warning C4101: “l”: 未引用的局部变量
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/kwayrefine.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c(54,52): warning C4305: “函数”: 从“double”到“real_t”截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c(69,38): warning C4305: “函数”: 从“double”到“real_t”截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c(151,18): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c(564,22): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\kwayrefine.c(564,51): warning C4101: “pid”: 未引用的局部变量
+  正在生成代码...
+  正在编译...
+  mcutil.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/mcutil.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  mesh.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/mesh.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  meshpart.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/meshpart.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\meshpart.c(200,21): warning C4244: “=”: 从“real_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\meshpart.c(182,15): warning C4101: “k”: 未引用的局部变量
+  minconn.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/minconn.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c(256,63): warning C4244: “=”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c(203,29): warning C4305: “初始化”: 从“double”到“real_t”截断
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c(480,19): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c(480,26): warning C4101: “l”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\minconn.c(564,19): warning C4101: “jj”: 未引用的局部变量
+  mincover.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/mincover.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  mmd.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/mmd.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  ometis.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/ometis.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(109,35): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(186,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(239,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(367,44): warning C4244: “函数”: 从“double”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(555,44): warning C4101: “mypart”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\ometis.c(657,12): warning C4101: “j”: 未引用的局部变量
+  options.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/options.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\options.c(69,27): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\options.c(100,39): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\options.c(112,42): warning C4244: “函数”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\options.c(116,27): warning C4305: “+=”: 从“double”到“real_t”截断
+  parmetis.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/parmetis.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(108,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(164,12): warning C4101: “j”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(164,9): warning C4101: “i”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(296,36): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(300,13): warning C4267: “=”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(384,45): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(390,40): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(521,40): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(522,40): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(526,49): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(612,48): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(632,50): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\parmetis.c(638,45): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+  pmetis.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/pmetis.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\pmetis.c(179,27): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\pmetis.c(201,28): warning C4244: “函数”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\pmetis.c(202,35): warning C4244: “函数”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\pmetis.c(160,12): warning C4101: “j”: 未引用的局部变量
+  refine.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/refine.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  separator.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/separator.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\separator.c(23,15): warning C4101: “k”: 未引用的局部变量
+  sfm.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/sfm.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(55,13): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(75,38): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(76,38): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(159,48): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(179,50): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(185,45): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(294,13): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(316,34): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(394,44): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(399,38): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(497,13): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(523,32): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(592,43): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(597,36): warning C4244: “函数”: 从“idx_t”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\sfm.c(479,38): warning C4101: “pass”: 未引用的局部变量
+  srefine.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/srefine.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\srefine.c(139,12): warning C4101: “j”: 未引用的局部变量
+  stat.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/stat.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(23,15): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(24,59): warning C4101: “tmpptr”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(140,58): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(148,60): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(129,10): warning C4101: “balance”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\stat.c(171,55): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+  timing.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/timing.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+  wspace.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/wspace.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\wspace.c(184,28): warning C4267: “return”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\wspace.c(212,28): warning C4267: “return”: 从“size_t”转换到“idx_t”，可能丢失数据
+  正在生成代码...
+  graph.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/graph.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(131,18): warning C4267: “=”: 从“size_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(161,37): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(195,18): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(463,10): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(608,23): warning C4244: “=”: 从“ssize_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(613,22): warning C4244: “=”: 从“ssize_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(625,14): warning C4244: “=”: 从“ssize_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(630,24): warning C4244: “=”: 从“ssize_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(635,19): warning C4244: “=”: 从“ssize_t”转换到“int32_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(574,21): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(574,14): warning C4101: “ii”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(801,14): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(943,14): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(891,10): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(890,14): warning C4101: “jj”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(1115,17): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(1119,18): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(1156,17): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\graph.c(1160,18): warning C4244: “=”: 从“ssize_t”转换到“int”，可能丢失数据
+  util.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../GKlib/util.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(26,16): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(27,14): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(30,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(68,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(72,3): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(73,14): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(74,28): warning C4244: “=”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(88,11): warning C4244: “return”: 从“gk_idx_t”转换到“int”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\util.c(106,16): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+  graph.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/graph.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c(51,29): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c(21,11): warning C4101: “nvwgt”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c(20,18): warning C4101: “sum”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c(20,15): warning C4101: “k”: 未引用的局部变量
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\graph.c(110,29): warning C4244: “=”: 从“double”转换到“real_t”，可能丢失数据
+  util.c
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\ucrt\corecrt_math.h(88,9): warning C4005: “INFINITY”: 宏重定义
+  (编译源文件“../../libmetis/util.c”)
+      D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\GKlib\gk_arch.h(67,9):
+      参见“INFINITY”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\util.c(54,13): warning C4267: “return”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\util.c(85,10): warning C4267: “return”: 从“size_t”转换到“idx_t”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\libmetis\util.c(115,10): warning C4267: “return”: 从“size_t”转换到“idx_t”，可能丢失数据
+  metis.vcxproj -> D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\libmetis\Release\metis.lib

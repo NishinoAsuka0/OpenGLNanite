@@ -1,0 +1,323 @@
+﻿  正在扫描源以查找模块依赖项...
+  Shaders.h
+  正在编译...
+  Shaders.h
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Shaders.h”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Shaders.h”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Shaders.h”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Shaders.h”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\packages\Assimp.3.0.0\build\native\include\assimp\types.h(110,14): warning C5260: 常量变量 "MAXLEN" 在包含的标头文件上下文中具有内部链接，但在导入的标头单元上下文中具有外部链接。如果要跨翻译单元共享它，请考虑将其声明为“内联”; 若要表达将它本地用于此翻译单元的意向，则考虑将其声明为“静态”。
+  (编译源文件“Shaders.h”)
+  
+  Bounds.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Bounds.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Bounds.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Bounds.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Bounds.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Bounds.cpp(88,19): warning C4244: “初始化”: 从“double”转换到“f32”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Bounds.cpp(90,51): warning C4244: “=”: 从“double”转换到“f32”，可能丢失数据
+  Camera.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Camera.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Camera.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Camera.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Camera.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+  Cluster.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Cluster.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Cluster.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Cluster.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Cluster.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“Cluster.cpp”)
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Cluster.cpp(31,8): warning C4244: “初始化”: 从“f32”转换到“u32”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Cluster.cpp(31,24): warning C4244: “初始化”: 从“f32”转换到“u32”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Cluster.cpp(31,40): warning C4244: “初始化”: 从“f32”转换到“u32”，可能丢失数据
+  Engine.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Engine.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Engine.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Engine.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Engine.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“Engine.cpp”)
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(32,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(33,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(38,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(39,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(41,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(42,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(50,57): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Engine.cpp(110,23): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+  Main.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Main.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Main.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Main.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Main.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“Main.cpp”)
+  
+  Mesh.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Mesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Mesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Mesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Mesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+  MeshSimplify.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“MeshSimplify.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“MeshSimplify.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“MeshSimplify.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“MeshSimplify.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“MeshSimplify.cpp”)
+  
+  Model.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Model.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Model.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Model.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Model.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“Model.cpp”)
+  
+  NaniteMesh.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“NaniteMesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“NaniteMesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“NaniteMesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“NaniteMesh.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\MeshSimplify.h(50,11): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
+  (编译源文件“NaniteMesh.cpp”)
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\NaniteMesh.cpp(98,13): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  OpenGLwin.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“OpenGLwin.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“OpenGLwin.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“OpenGLwin.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“OpenGLwin.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+  Partitioner.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Partitioner.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Partitioner.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Partitioner.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Partitioner.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(76,23): warning C4018: “<=”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(133,14): warning C4018: “<=”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(133,36): warning C4018: “<=”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(146,21): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(147,25): warning C4018: “>=”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(151,39): warning C4018: “<”: 有符号/无符号不匹配
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\Partitioner.cpp(193,20): warning C4018: “<”: 有符号/无符号不匹配
+  Shaders.cpp
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
+  (编译源文件“Shaders.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(51,9):
+      参见“INT32_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
+  (编译源文件“Shaders.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(55,9):
+      参见“INT32_MAX”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
+  (编译源文件“Shaders.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(52,9):
+      参见“INT64_MIN”的前一个定义
+  
+D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
+  (编译源文件“Shaders.cpp”)
+      D:\VS\VS2022\Community\VC\Tools\MSVC\14.41.34120\include\stdint.h(56,9):
+      参见“INT64_MAX”的前一个定义
+  
+  正在生成代码...
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew32s.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  OpenGL_Nanite.vcxproj -> D:\VS\VSProj\OpenGL_Nanite\Debug\OpenGL_Nanite.exe

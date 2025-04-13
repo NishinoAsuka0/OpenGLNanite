@@ -1,0 +1,9 @@
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/CMakeFiles/ALL_BUILD.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/CMakeFiles/ZERO_CHECK.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/libmetis/CMakeFiles/metis.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/gpmetis.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/ndmetis.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/mpmetis.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/m2gmetis.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/graphchk.dir
+D:/VS/VSProj/OpenGL_Nanite/OpenGL_Nanite/metis-5.1.0/build/programs/CMakeFiles/cmpfillin.dir

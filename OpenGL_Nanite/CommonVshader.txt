@@ -1,0 +1,13 @@
+#version 460 core
+layout (location = 0) in vec3 position;
+layout (location = 1) in vec2 uv;
+out vec2 vTexCoord;
+uniform mat4 transformMatrix;						
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+uniform uint viewMode;
+
+void main() {
+    vTexCoord = uv;
+    gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4(position, 1.0f);
+}

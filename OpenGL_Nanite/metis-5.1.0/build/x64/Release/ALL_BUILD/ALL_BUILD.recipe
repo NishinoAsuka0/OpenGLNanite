@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\cmpfillin.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\gpmetis.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\graphchk.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\m2gmetis.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\mpmetis.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\programs\Release\ndmetis.exe</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\build\x64\Release\ALL_BUILD</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>

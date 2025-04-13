@@ -1,0 +1,66 @@
+#version 460 core
+
+struct GPUCluster {
+    vec4 lodBounds;         // xyz 为中心，w 为半径
+    vec4 parentLodBounds;
+    uint vertOffset;
+    uint indexOffset;
+    uint groupId;
+    uint mipLevel;
+    float lodError;
+    float maxParentLodError;
+    uint visible;
+    uint indexCount;
+};
+
+layout(std430, binding = 0) buffer ClusterBuffer {
+    GPUCluster clusters[];
+};
+
+layout (location = 0) in vec3 position;
+layout (location = 1) in vec2 uv;				// 颜色变量的顶点属性位置值为 1
+out vec3 ourColor;
+out vec2 vTexCoord;
+uniform mat4 transformMatrix;						
+uniform mat4 projectionMatrix;
+uniform mat4 viewMatrix;
+uniform uint viewMode;
+
+uint MurmurMix(uint Hash){
+	Hash^=Hash>>16;
+	Hash*=0x85ebca6b;
+	Hash^=Hash>>13;
+	Hash*=0xc2b2ae35;
+	Hash^=Hash>>16;
+	return Hash;
+}
+
+vec3 ToColor(uint idx)
+{
+	uint Hash = MurmurMix(idx+1);
+
+	vec3 color=vec3(
+		(Hash>>0)&255,
+		(Hash>>8)&255,
+		(Hash>>16)&255
+	);
+
+	return color*(1.0f/255.0f);
+}
+
+void main()
+{
+	//ourColor = color;
+	uint vClusterID = uint(gl_BaseInstance);
+	uint vTriID = (gl_BaseInstance + gl_VertexID - clusters[vClusterID].indexOffset) / 3;
+	uint vGroupID = clusters[vClusterID].groupId;
+	uint vMipLevel = clusters[vClusterID].mipLevel;
+
+	if(viewMode == 0) ourColor = ToColor(vTriID);
+	else if(viewMode == 1) ourColor = ToColor(vClusterID);
+	else if(viewMode == 2) ourColor = ToColor(vGroupID);
+	else if(viewMode == 3) ourColor = ToColor(vMipLevel);
+
+	vTexCoord = uv;
+	gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4(position, 1.0f);	 // 注意矩阵乘法要从右向左读
+}

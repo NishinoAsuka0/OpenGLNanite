@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\cmpfillin.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\io.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\smbfactor.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\VS\VSProj\OpenGL_Nanite\OpenGL_Nanite\metis-5.1.0\programs\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4ED08980-E71D-3046-92A9-6655DEB5B0A1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

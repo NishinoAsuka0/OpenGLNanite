@@ -1,0 +1,295 @@
+F0315 11:48:30.690] SIGABRT: aborted
+00007FFE04369EA7 (ucrtbased): (filename not available): raise
+00007FFE0436580E (ucrtbased): (filename not available): setmbcp
+00007FFE043665E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE04368036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE043664C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE04354821 (ucrtbased): (filename not available): _threadid
+00007FFE043549D3 (ucrtbased): (filename not available): _threadid
+00007FFE0436BACD (ucrtbased): (filename not available): abort
+00007FFE04371745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE043713B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE0436F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE04371CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart
+F0315 11:49:58.956] SIGABRT: aborted
+00007FFE02139EA7 (ucrtbased): (filename not available): raise
+00007FFE0213580E (ucrtbased): (filename not available): setmbcp
+00007FFE021365E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE02138036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE021364C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE02124821 (ucrtbased): (filename not available): _threadid
+00007FFE021249D3 (ucrtbased): (filename not available): _threadid
+00007FFE0213BACD (ucrtbased): (filename not available): abort
+00007FFE02141745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE021413B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE0213F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE02141CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart
+F0315 11:57:21.480] SIGABRT: aborted
+00007FFE01F29EA7 (ucrtbased): (filename not available): raise
+00007FFE01F2580E (ucrtbased): (filename not available): setmbcp
+00007FFE01F265E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFE01F28036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFE01F264C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFE01F14821 (ucrtbased): (filename not available): _threadid
+00007FFE01F149D3 (ucrtbased): (filename not available): _threadid
+00007FFE01F2BACD (ucrtbased): (filename not available): abort
+00007FFE01F31745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F313B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F2F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFE01F31CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Bounds.cpp (97): Sphere::FromPoints
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (118): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (110): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (270): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFF453654E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFF472E485B (ntdll): (filename not available): RtlUserThreadStart
+F0330 23:55:25.020] SIGABRT: aborted
+00007FF880B89EA7 (ucrtbased): (filename not available): raise
+00007FF880B850FF (ucrtbased): (filename not available): setmbcp
+00007FF880B86593 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FF880B87452 (ucrtbased): (filename not available): VCrtDbgReportA
+00007FF880B86439 (ucrtbased): (filename not available): CrtDbgReport
+D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\vector (1925): std::vector<vec3,std::allocator<vec3> >::operator[]
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (44): BuildAdjacencyEdgeLink
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Cluster.cpp (80): ClusterTriangles
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (55): NaniteMesh::Build
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp (112): NaniteMesh::NaniteMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (94): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (128): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FF93FDE54E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF94170485B (ntdll): (filename not available): RtlUserThreadStart
+F0405 16:25:45.650] SIGABRT: aborted
+00007FF8EC249EA7 (ucrtbased): (filename not available): raise
+00007FF8EC2450FF (ucrtbased): (filename not available): setmbcp
+00007FF8EC246593 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FF8EC247452 (ucrtbased): (filename not available): VCrtDbgReportA
+00007FF8EC246439 (ucrtbased): (filename not available): CrtDbgReport
+D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\xstring (2245): std::basic_string<char,std::char_traits<char>,std::allocator<char> >::operator[]
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (121): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFA48ED54E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFA49A0485B (ntdll): (filename not available): RtlUserThreadStart
+F0411 16:09:57.854] SIGABRT: aborted
+00007FFD41C69EA7 (ucrtbased): (filename not available): raise
+00007FFD41C6580E (ucrtbased): (filename not available): setmbcp
+00007FFD41C665E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFD41C68036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFD41C664C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFD41C54821 (ucrtbased): (filename not available): _threadid
+00007FFD41C549D3 (ucrtbased): (filename not available): _threadid
+00007FFD41C6BACD (ucrtbased): (filename not available): abort
+00007FFD41C71745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41C713B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41C6F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41C71CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (82): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (130): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFDE40F54E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFDE576485B (ntdll): (filename not available): RtlUserThreadStart
+F0411 16:18:09.991] SIGABRT: aborted
+00007FFD41B29EA7 (ucrtbased): (filename not available): raise
+00007FFD41B2580E (ucrtbased): (filename not available): setmbcp
+00007FFD41B265E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFD41B28036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFD41B264C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFD41B14821 (ucrtbased): (filename not available): _threadid
+00007FFD41B149D3 (ucrtbased): (filename not available): _threadid
+00007FFD41B2BACD (ucrtbased): (filename not available): abort
+00007FFD41B31745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41B313B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41B2F3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFD41B31CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (82): Model::ProcessMesh
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (23): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (28): Model::ProcessNode
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (14): Model::LoadModel
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Model.cpp (106): Model::Model
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (130): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (31): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFDE40F54E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFDE576485B (ntdll): (filename not available): RtlUserThreadStart
+F0411 17:43:45.020] SIGABRT: aborted
+00007FFCDE8F9EA7 (ucrtbased): (filename not available): raise
+00007FFCDE8F580E (ucrtbased): (filename not available): setmbcp
+00007FFCDE8F65E3 (ucrtbased): (filename not available): CrtSetReportHookW2
+00007FFCDE8F8036 (ucrtbased): (filename not available): VCrtDbgReportW
+00007FFCDE8F64C9 (ucrtbased): (filename not available): CrtDbgReportW
+00007FFCDE8E4821 (ucrtbased): (filename not available): _threadid
+00007FFCDE8E49D3 (ucrtbased): (filename not available): _threadid
+00007FFCDE8FBACD (ucrtbased): (filename not available): abort
+00007FFCDE901745 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFCDE9013B7 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFCDE8FF3A8 (ucrtbased): (filename not available): get_wide_winmain_command_line
+00007FFCDE901CAF (ucrtbased): (filename not available): wassert
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui.cpp (10207): ImGui::ErrorCheckNewFrameSanityChecks
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\ImGui\imgui.cpp (5177): ImGui::NewFrame
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp (82): CommonUI
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp (623): Renderer::CommonRender
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (189): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (79): invoke_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (331): __scrt_common_main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_main.cpp (17): mainCRTStartup
+00007FFDE40F54E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFDE576485B (ntdll): (filename not available): RtlUserThreadStart
+F0412 19:07:38.171] Error: EXCEPTION_ACCESS_VIOLATION
+00007FF9AA6F3B36 (ntdll): (filename not available): _C_specific_handler
+00007FF9AA708B1F (ntdll): (filename not available): _chkstk
+00007FF9AA695B9A (ntdll): (filename not available): RtlRestoreContext
+00007FF9AA707B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF85FFFAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF8609C9B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609C4E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86089EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86088F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86088E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609BF66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609C0271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (151): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FF9A91854E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF9AA66485B (ntdll): (filename not available): RtlUserThreadStart
+F0412 19:48:15.146] Error: EXCEPTION_ACCESS_VIOLATION
+00007FF9AA6F3B36 (ntdll): (filename not available): _C_specific_handler
+00007FF9AA708B1F (ntdll): (filename not available): _chkstk
+00007FF9AA695B9A (ntdll): (filename not available): RtlRestoreContext
+00007FF9AA707B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF85FFFAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF8609C9B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609C4E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86089EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86088F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF86088E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609BF66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8609C0271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (151): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FF9A91854E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF9AA66485B (ntdll): (filename not available): RtlUserThreadStart
+F0412 22:07:13.467] Error: EXCEPTION_ACCESS_VIOLATION
+00007FF9AA6F3B36 (ntdll): (filename not available): _C_specific_handler
+00007FF9AA708B1F (ntdll): (filename not available): _chkstk
+00007FF9AA695B9A (ntdll): (filename not available): RtlRestoreContext
+00007FF9AA707B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF8E86BAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF8E9089B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E9084E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8F5EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8F4F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8F4E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E907F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E9080271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (151): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FF9A91854E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF9AA66485B (ntdll): (filename not available): RtlUserThreadStart
+F0413 00:00:22.882] Error: EXCEPTION_ACCESS_VIOLATION
+00007FF9AA6F3B36 (ntdll): (filename not available): _C_specific_handler
+00007FF9AA708B1F (ntdll): (filename not available): _chkstk
+00007FF9AA695B9A (ntdll): (filename not available): RtlRestoreContext
+00007FF9AA707B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF8E7A4AA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF8E8419B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8414E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82EEBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82DF359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82DE4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E840F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8410271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (151): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FF9A91854E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF9AA66485B (ntdll): (filename not available): RtlUserThreadStart
+F0413 00:00:46.684] Error: EXCEPTION_ACCESS_VIOLATION
+00007FF9AA6F3B36 (ntdll): (filename not available): _C_specific_handler
+00007FF9AA708B1F (ntdll): (filename not available): _chkstk
+00007FF9AA695B9A (ntdll): (filename not available): RtlRestoreContext
+00007FF9AA707B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF8E7A4AA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF8E8419B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8414E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82EEBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82DF359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E82DE4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E840F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF8E8410271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (151): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FF9A91854E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FF9AA66485B (ntdll): (filename not available): RtlUserThreadStart
