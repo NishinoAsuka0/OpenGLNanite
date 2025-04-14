@@ -79,6 +79,7 @@ void Engine::InitEngine()
 	this->deltaTime = 0.0f;
 	this->lastTime = 0.0f;
 	camera = new Camera(glm::vec3(0.0f, 0.0f, 3.0f));
+	
 }
 
 
@@ -95,8 +96,6 @@ void Engine::Draw()
 	glfwSetScrollCallback(this->window.GetWindow(), ScrollCallBack);
 
 	glewInit();
-
-	Renderer render;
 	
 	render.SetRenderMode(renderMode);
 	if (renderMode == 1) {
@@ -109,11 +108,13 @@ void Engine::Draw()
 		vector<Vertex>verts;
 		vector<u32>indices;
 		myModel = new Model("Model/" + modelPath, false);
-		texName += ".png";
+		texName;
+		int id = 0;
 		for (auto& mesh : myModel->GetMeshes())
 		{
-			mesh->LoadTex("Model/" + texName);
+			mesh->LoadTex("Model/" + texName + "/" + texName + "_" + to_string(id) + ".png");
 			render.AddMesh(mesh);
+			id++;
 		}
 		render.SetScreenSize(this->window.GetWindow(), screenWidth, screenHeight);
 		render.SetCamera(camera);
@@ -134,17 +135,13 @@ void Engine::Draw()
 			PackData(dataName);
 		}
 		ReadPackData(dataName);
-		
-		for (auto& mesh : meshes) {
-			mesh->LoadTex("Model/" + texName);
-			render.AddMesh(mesh);
-		}
-
 		render.SetScreenSize(this->window.GetWindow(), screenWidth, screenHeight);
 		render.SetCamera(camera);
 		render.SetClusterCount(clusterCount);
 		render.SetTriCount(triCount);
 		render.Init();
+		render.LoadClusters();
+		render.LoadTex("Model/" + dataName + "/" + dataName);
 	}
 	
 	// draw loop »­Í¼Ñ­»·
@@ -256,7 +253,6 @@ void Engine::ReadPackData(string name)
 	FILE* file = fopen(fileName.c_str(), "rb");
 	meshes.clear();
 	while (file) {
-		NaniteMesh* mesh = new NaniteMesh();
 
 		size_t numCluster;
 		fread(&numCluster, sizeof(size_t), 1, file);
@@ -285,10 +281,7 @@ void Engine::ReadPackData(string name)
 		}
 
 		fclose(file);
-
-		mesh->GenerateClusters(readClusters);
-		meshes.push_back(mesh);
-
+		render.GenerateClusters(readClusters, index);
 		index++;
 		fileName = "Model/" + name + "/" + name + "_" + to_string(index) + ".txt";
 		file = fopen(fileName.c_str(), "rb");

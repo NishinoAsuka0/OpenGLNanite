@@ -1,16 +1,19 @@
 #version 460 core
 
 struct GPUCluster {
-    vec4 lodBounds;         // xyz 为中心，w 为半径
-    vec4 parentLodBounds;
-    uint vertOffset;
-    uint indexOffset;
-    uint groupId;
-    uint mipLevel;
-    float lodError;
+    vec4 lodBounds;         
+    vec4 parentLodBounds;   
+    float lodError;         
     float maxParentLodError;
-    uint visible;
-    uint indexCount;
+    uint vertOffset;        
+    uint indexOffset;       
+    uint groupId;           
+    uint mipLevel;          
+    uint visible;           
+    uint indexCount;       
+    uint textureID;         
+    // 显式填充到 80 字节
+    uint _padding[3];       
 };
 
 layout(std430, binding = 0) buffer ClusterBuffer {
@@ -19,8 +22,8 @@ layout(std430, binding = 0) buffer ClusterBuffer {
 
 layout (location = 0) in vec3 position;
 layout (location = 1) in vec2 uv;				// 颜色变量的顶点属性位置值为 1
-out vec3 ourColor;
-out vec2 vTexCoord;
+out vec4 ourColor;
+uniform sampler2DArray meshTextures;
 uniform mat4 transformMatrix;						
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
@@ -55,12 +58,13 @@ void main()
 	uint vTriID = (gl_BaseInstance + gl_VertexID - clusters[vClusterID].indexOffset) / 3;
 	uint vGroupID = clusters[vClusterID].groupId;
 	uint vMipLevel = clusters[vClusterID].mipLevel;
+	uint textureID = clusters[vClusterID].textureID;
 
-	if(viewMode == 0) ourColor = ToColor(vTriID);
-	else if(viewMode == 1) ourColor = ToColor(vClusterID);
-	else if(viewMode == 2) ourColor = ToColor(vGroupID);
-	else if(viewMode == 3) ourColor = ToColor(vMipLevel);
+	if(viewMode == 0) ourColor = vec4(ToColor(vTriID), 1.0f);
+	else if(viewMode == 1) ourColor = vec4(ToColor(vClusterID), 1.0f);
+	else if(viewMode == 2) ourColor = vec4(ToColor(vGroupID), 1.0f);
+	else if(viewMode == 3) ourColor = vec4(ToColor(vMipLevel), 1.0f);
+	else if(viewMode == 4) ourColor = texture(meshTextures, vec3(uv, textureID));
 
-	vTexCoord = uv;
 	gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4(position, 1.0f);	 // 注意矩阵乘法要从右向左读
 }

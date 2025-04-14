@@ -132,6 +132,9 @@
     <ClCompile Include="ImGui\imgui_widgets.cpp">
       <Filter>源文件\ImGui</Filter>
     </ClCompile>
+    <ClCompile Include="HZBManager.cpp">
+      <Filter>源文件\Buffers</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="OpenGLwin.h">
@@ -212,6 +215,9 @@
     <ClInclude Include="ImGui\imstb_truetype.h">
       <Filter>头文件\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="HZBManager.h">
+      <Filter>头文件\Buffers</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="VertexShader.txt">
@@ -234,8 +240,10 @@
     </Text>
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
     <None Include="ComputeVisibility.comp">
+      <Filter>源文件\Shaders</Filter>
+    </None>
+    <None Include="HZBGen.comp">
       <Filter>源文件\Shaders</Filter>
     </None>
   </ItemGroup>

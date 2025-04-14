@@ -14,6 +14,7 @@
 #include "imgui_impl_glfw.h"
 #include "imgui_impl_opengl3.h"
 #include "stb_image.h"
+#include "HZBManager.h"
 
 class Renderer
 {
@@ -23,6 +24,7 @@ public:
 
     // 初始化 OpenGL 对象、加载数据和着色器
     void Init();
+
     // 渲染场景
     void Render();
 
@@ -44,7 +46,12 @@ public:
     void SetClusterCount(u32 clusterCount);
     void SetTriCount(u32 triCount);
 
+    void InitBuffers();
     void AddMesh(Mesh* mesh);
+
+    void LoadTex(string dataName);
+    void LoadClusters();
+    void GenerateClusters(vector<PackedCluster>clusters, int texID);
 private:
     // 初始化深度缓冲
     void InitDepthBuffer();
@@ -58,10 +65,21 @@ private:
 
     // 着色器对象
     Shader* depthShader;        //深度渲染着色器
+    Shader* computeShader;      // compute shader 用于 LOD 切换与可见性判断
+    Shader* renderShader;
 
+    unsigned int ssboClusters;      // 存储 GPUCluster 数据
+    unsigned int ssboIndirectCmd;   // 存储间接绘制命令数组
+    unsigned int ssboCmdCounter;    // 存储原子计数器，统计可见 Cluster 数量
+    unsigned int ssboTriCount;  //存储三角形数量
+    unsigned int secondSsboIndirectCmd;
+    unsigned int secondSsboCmdCounter;
     //存储
     vector<Mesh*>meshes;
-
+    vector<GPUCluster> gpuClusters;
+    vector<Vertex> vertices;
+    vector<unsigned int> indices;
+    unsigned int VAO, VBO, EBO;
 
     //渲染模式，0：三角形， 1：Cluster ，2：ClusterGroup， 3：LODlevel 4：纹理贴图
     u32 viewMode;
@@ -72,17 +90,19 @@ private:
     Camera* camera;
 
     //遮挡剔除
-    GLuint depthTextures[3];  // 0:N-2帧  1:N-1帧  2:当前帧
-    GLuint depthFBOs[3];      // 三个FBO配套深度附件
-
-    int currentDepthIndex = 2; // 当前写入的depth index
-    int prevDepthIndex = 1;    // 上一帧index
-    int prevPrevDepthIndex = 0; // 上上帧index
+    bool firstFrame;
+    GLuint depthFBO, depthTexture;
+    HZBManager* hzbManager;
+    glm::mat4 prevView, prevProj;
+    glm::mat4 currentView, currentProj;
 
     // 当前 Cluster 数量
     unsigned int clusterCount;
     unsigned int triCount;
 
+    //纹理
+    GLuint textureArray;
+    u32 numTextures;
     //帧率
     float lastTime = 0.0f;
     int frameCount = 0;

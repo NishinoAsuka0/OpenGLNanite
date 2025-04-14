@@ -3,20 +3,19 @@ layout(local_size_x = 256, local_size_y = 1, local_size_z = 1) in;
 // Compute Shader 用于根据摄像机位置进行 LOD 切换和可见性判断并生成间接绘制命令
 
 struct GPUCluster {
-    vec4 lodBounds;         // xyz 为中心，w 为半径
-    vec4 parentLodBounds;
-    uint vertOffset;
-    uint indexOffset;
-    uint groupId;
-    uint mipLevel;
-    float lodError;
+    vec4 lodBounds;         
+    vec4 parentLodBounds;   
+    float lodError;         
     float maxParentLodError;
-    uint visible;
-    uint indexCount;
-};
-
-layout(std430, binding = 0) buffer ClusterBuffer {
-    GPUCluster clusters[];
+    uint vertOffset;        
+    uint indexOffset;       
+    uint groupId;           
+    uint mipLevel;          
+    uint visible;           
+    uint indexCount;       
+    uint textureID;         
+    // 显式填充到 80 字节
+    uint _padding[3];       
 };
 
 struct DrawElementsIndirectCommand {
@@ -25,6 +24,11 @@ struct DrawElementsIndirectCommand {
     uint firstIndex;
     uint baseVertex;
     uint baseInstance;
+};
+
+
+layout(std430, binding = 0) buffer ClusterBuffer {
+    GPUCluster clusters[];
 };
 
 layout(std430, binding = 1) buffer IndirectCommandBuffer {
@@ -59,7 +63,6 @@ uniform int occludeMode;
 uniform vec2 uScreenSize;
 
 bool RoughOccluded(vec3 centerWorldPos, float radius) {
-
     vec4 prevViewPos = uPrevViewMat * vec4(centerWorldPos, 1.0);
     if (prevViewPos.z >= 0.0) return false; // 背面剔除
 
@@ -67,10 +70,10 @@ bool RoughOccluded(vec3 centerWorldPos, float radius) {
     vec4 prevClipPos = uPrevProjMat * prevViewPos;
     if (prevClipPos.w <= 0.0) return false; // 视锥外剔除
 
-    // 计算 NDC 和纹理 UV
+    // 计算NDC和屏幕UV
     vec3 prevNdc = prevClipPos.xyz / prevClipPos.w;
     vec2 uvCenter = prevNdc.xy * 0.5 + 0.5;
-    uvCenter.y = 1.0 - uvCenter.y; // 翻转 Y 轴
+    uvCenter.y = 1.0 - uvCenter.y; // 翻转Y轴
 
     if (any(lessThan(uvCenter, vec2(0.0))) || any(greaterThan(uvCenter, vec2(1.0))))
         return false;
@@ -79,7 +82,7 @@ bool RoughOccluded(vec3 centerWorldPos, float radius) {
     float prevDepth = texture(prevDepthTexture, uvCenter).r;
     float prevDepthNDC = prevDepth * 2.0 - 1.0; // 转换到NDC的Z范围[-1, 1]
 
-    // 正确计算视图空间Z
+    // 计算视图空间Z
     float prevProjA = uPrevProjMat[2][2];
     float prevProjB = uPrevProjMat[2][3];
     float prevViewZ = -prevProjB / (prevDepthNDC + prevProjA); // 修正分母符号
@@ -98,29 +101,29 @@ bool RoughOccluded(vec3 centerWorldPos, float radius) {
 bool FinalOccluded(vec3 centerWorldPos, float radius) {
     if (isFirstFrame == 1) return false;
 
-    //转换到当前视图空间
+    // 转换到当前视图空间
     vec4 viewPos = uViewMat * vec4(centerWorldPos, 1.0);
     if (viewPos.z >= 0.0) return false; // 背面剔除
     vec3 viewCenter = viewPos.xyz / viewPos.w;
     float viewZ = -viewCenter.z; // 正深度
 
-    //计算视图空间半径
+    // 计算视图空间半径
     vec3 viewEdge = (uViewMat * vec4(centerWorldPos + vec3(radius,0,0), 1.0)).xyz;
     viewEdge /= viewPos.w; // 归一化
     float viewRadius = length(viewEdge - viewCenter);
 
-    //转换到屏幕空间
+    // 转换到屏幕空间
     vec4 clipPos = uProjMat * vec4(viewCenter, 1.0);
     vec3 ndc = clipPos.xyz / clipPos.w;
     vec2 uvCenter = ndc.xy * 0.5 + 0.5;
     uvCenter.y = 1.0 - uvCenter.y;
 
-    //计算屏幕空间半径
+    // 计算屏幕空间半径
     vec4 clipEdge = uProjMat * vec4(viewCenter + vec3(viewRadius,0,0), 1.0);
     vec2 screenEdge = (clipEdge.xy / clipEdge.w) * 0.5 + 0.5;
     float screenRadius = length(screenEdge - uvCenter) * uScreenSize.x;
 
-    //采样参数
+    // 采样HZB纹理
     const int sampleGridSize = 4;
     const float occlusionThreshold = 0.6;
     int occludedCount = 0;
@@ -137,6 +140,7 @@ bool FinalOccluded(vec3 centerWorldPos, float radius) {
             }
 
             totalSamples++;
+            // 使用当前HZB纹理来进行精细剔除
             float sampledDepth = texture(curDepthTexture, sampleUv).r;
             if (sampledDepth >= 1.0) continue;
 
@@ -168,8 +172,11 @@ bool IsInFrustum(vec3 center, float radius) {
 
 bool CheckLod(vec4 bounds,float error){
     vec3 p=(uViewMat*vec4(bounds.xyz,1)).xyz;
+
     float d=max(length(p)-bounds.w,0);
-    float theta=radians(40)/1080.0f;
+
+    float theta=radians(45)/uScreenSize.y;
+    
     return theta*d>=error;
 }
 

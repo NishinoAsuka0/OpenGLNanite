@@ -30,9 +30,9 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(47,16): warning C4244:
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(49,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(50,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(58,57): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(154,23): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(265,19): warning C4267: “+=”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(284,22): warning C4267: “+=”: 从“size_t”转换到“u32”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(149,23): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(259,19): warning C4267: “+=”: 从“size_t”转换到“u32”，可能丢失数据
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp(278,22): warning C4267: “+=”: 从“size_t”转换到“u32”，可能丢失数据
   Main.cpp
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
   (编译源文件“Main.cpp”)
@@ -81,64 +81,21 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9)
 E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\MeshSimplify.h(37,17): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
   (编译源文件“Model.cpp”)
   
-  NaniteMesh.cpp
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(51,9):
-      参见“INT32_MIN”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(55,9):
-      参见“INT32_MAX”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(52,9):
-      参见“INT64_MIN”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
-  (编译源文件“NaniteMesh.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(56,9):
-      参见“INT64_MAX”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\MeshSimplify.h(37,17): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
-  (编译源文件“NaniteMesh.cpp”)
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(8,10): warning C4244: “初始化”: 从“double”转换到“f32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(20,10): warning C4244: “初始化”: 从“unsigned __int64”转换到“f32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(69,61): warning C4267: “参数”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(71,24): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(74,21): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(75,19): warning C4267: “初始化”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(87,69): warning C4267: “参数”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(148,32): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(149,32): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\NaniteMesh.cpp(150,33): warning C4267: “=”: 从“size_t”转换到“u32”，可能丢失数据
-  Render.cpp
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(75,9): warning C4005: “INT32_MIN”: 宏重定义
-  (编译源文件“Render.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(51,9):
-      参见“INT32_MIN”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(76,9): warning C4005: “INT32_MAX”: 宏重定义
-  (编译源文件“Render.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(55,9):
-      参见“INT32_MAX”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(77,9): warning C4005: “INT64_MIN”: 宏重定义
-  (编译源文件“Render.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(52,9):
-      参见“INT64_MIN”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\metis-5.1.0\include\metis.h(78,9): warning C4005: “INT64_MAX”: 宏重定义
-  (编译源文件“Render.cpp”)
-      D:\Software\VS\VS2022\product\VC\Tools\MSVC\14.43.34808\include\stdint.h(56,9):
-      参见“INT64_MAX”的前一个定义
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\MeshSimplify.h(37,17): warning C4244: “初始化”: 从“f64”转换到“f32”，可能丢失数据
-  (编译源文件“Render.cpp”)
-  
-E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Render.cpp(4,23): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
   正在生成代码...
-  OpenGL_Nanite.vcxproj -> E:\VsProject\Nanite\OpenGLNanite\x64\Debug\OpenGL_Nanite.exe
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“”(使用“glew32s.lib(glew.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+assimp-vc143-mtd.lib(AssbinLoader.obj) : error LNK2019: 无法解析的外部符号 uncompress，函数 "public: virtual void __cdecl Assimp::AssbinImporter::InternReadFile(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,struct aiScene *,class Assimp::IOSystem *)" (?InternReadFile@AssbinImporter@Assimp@@UEAAXAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@PEAUaiScene@@PEAVIOSystem@2@@Z) 中引用了该符号
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflate，函数 "public: unsigned __int64 __cdecl Assimp::Compression::decompress(void const *,unsigned __int64,class std::vector<char,class std::allocator<char> > &)" (?decompress@Compression@Assimp@@QEAA_KPEBX_KAEAV?$vector@DV?$allocator@D@std@@@std@@@Z) 中引用了该符号
+assimp-vc143-mtd.lib(unzip.obj) : error LNK2001: 无法解析的外部符号 inflate
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflateEnd，函数 "public: bool __cdecl Assimp::Compression::close(void)" (?close@Compression@Assimp@@QEAA_NXZ) 中引用了该符号
+assimp-vc143-mtd.lib(unzip.obj) : error LNK2001: 无法解析的外部符号 inflateEnd
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflateSetDictionary，函数 "public: unsigned __int64 __cdecl Assimp::Compression::decompressBlock(void const *,unsigned __int64,char *,unsigned __int64)" (?decompressBlock@Compression@Assimp@@QEAA_KPEBX_KPEAD1@Z) 中引用了该符号
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflateReset，函数 "public: unsigned __int64 __cdecl Assimp::Compression::decompressBlock(void const *,unsigned __int64,char *,unsigned __int64)" (?decompressBlock@Compression@Assimp@@QEAA_KPEBX_KPEAD1@Z) 中引用了该符号
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflateInit_，函数 "public: bool __cdecl Assimp::Compression::open(enum Assimp::Compression::Format,enum Assimp::Compression::FlushMode,int)" (?open@Compression@Assimp@@QEAA_NW4Format@12@W4FlushMode@12@H@Z) 中引用了该符号
+assimp-vc143-mtd.lib(Compression.obj) : error LNK2019: 无法解析的外部符号 inflateInit2_，函数 "public: bool __cdecl Assimp::Compression::open(enum Assimp::Compression::Format,enum Assimp::Compression::FlushMode,int)" (?open@Compression@Assimp@@QEAA_NW4Format@12@W4FlushMode@12@H@Z) 中引用了该符号
+assimp-vc143-mtd.lib(unzip.obj) : error LNK2001: 无法解析的外部符号 inflateInit2_
+assimp-vc143-mtd.lib(unzip.obj) : error LNK2019: 无法解析的外部符号 crc32，函数 unzReadCurrentFile 中引用了该符号
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glut-3.7\lib\glut32.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\openGL配置文件\glut-3.7\lib\glut.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+E:\VsProject\Nanite\OpenGLNanite\x64\Debug\OpenGL_Nanite.exe : fatal error LNK1120: 8 个无法解析的外部命令

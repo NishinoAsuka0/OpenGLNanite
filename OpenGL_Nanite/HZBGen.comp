@@ -1,0 +1,21 @@
+#version 460
+layout(local_size_x = 8, local_size_y = 8) in;
+
+layout(binding = 0) uniform sampler2D srcDepth;
+layout(binding = 1, r32f) writeonly uniform image2D dstDepth;
+
+uniform int srcMip;
+
+void main()
+{
+    ivec2 gid = ivec2(gl_GlobalInvocationID.xy);
+    ivec2 srcCoord = gid * 2;
+
+    float d0 = texelFetch(srcDepth, srcCoord + ivec2(0,0), srcMip).r;
+    float d1 = texelFetch(srcDepth, srcCoord + ivec2(1,0), srcMip).r;
+    float d2 = texelFetch(srcDepth, srcCoord + ivec2(0,1), srcMip).r;
+    float d3 = texelFetch(srcDepth, srcCoord + ivec2(1,1), srcMip).r;
+
+    float maxDepth = max(max(d0, d1), max(d2, d3));
+    imageStore(dstDepth, gid, vec4(maxDepth));
+}

@@ -40,6 +40,13 @@ int main(int argc, char** argv[])
 	if (mode > 2 || mode < 1) {
 		mode = 2; //如果不符合输入 默认为Cluster渲染
 	}
+
+	/*cout << "请输入适配的速度(1 - 100)：";
+	float speed;
+	cin >> speed;
+	cout << endl;
+	engine->GetCamera()->SetSpeed(speed);*/
+
 	engine->SetRenderMode(mode);
 	engine->LoadModelPath(path);
 	engine->Draw();

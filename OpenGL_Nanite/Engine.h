@@ -22,6 +22,7 @@ private:
 	int renderMode;
 	GLfloat deltaTime;
 	GLfloat lastTime;
+	Renderer render;
 	Camera* camera;
 	vector<Cluster>clusters;
 	vector<ClusterGroup>clusterGroups;

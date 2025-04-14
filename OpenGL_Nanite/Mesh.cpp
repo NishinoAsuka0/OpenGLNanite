@@ -28,7 +28,6 @@ vector<Texture>& Mesh::GetTexture()
 
 uvec2 Mesh::Draw()
 {
-    glBindFramebuffer(GL_FRAMEBUFFER, 0);;
     renderShader->Use();
 
     glActiveTexture(GL_TEXTURE0);

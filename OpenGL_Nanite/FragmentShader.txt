@@ -1,8 +1,6 @@
 #version 460 core
-in vec3 ourColor;
-in vec2 vTexCoord;
+in vec4 ourColor;
 uniform uint viewMode;
-uniform sampler2D ourTexture;
 out vec4 FragColor;
 
 uint MurmurMix(uint Hash){
@@ -32,11 +30,8 @@ void main()
 	uint triangleID = gl_PrimitiveID;
 	vec3 color = ToColor(triangleID);
 	vec4 finalColor = vec4(color, 1.0f);
-	if(viewMode != 0 && viewMode < 4){
-		finalColor = vec4(ourColor, 1.0f);
-	}
-	if(viewMode == 4){
-		finalColor = texture(ourTexture, vTexCoord);
+	if(viewMode != 0){
+		finalColor = ourColor;
 	}
     //FragColor = vec4(color, 1.0f);
 	FragColor = finalColor;
