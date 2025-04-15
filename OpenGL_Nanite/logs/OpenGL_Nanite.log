@@ -311,3 +311,75 @@ E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (45): main
 D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
 00007FFCEBD154E0 (KERNEL32): (filename not available): BaseThreadInitThunk
 00007FFCEC5A485B (ntdll): (filename not available): RtlUserThreadStart
+F0415 09:58:56.948] Error: EXCEPTION_ACCESS_VIOLATION
+00007FFACEA53B36 (ntdll): (filename not available): _C_specific_handler
+00007FFACEA68B1F (ntdll): (filename not available): _chkstk
+00007FFACE9F5B9A (ntdll): (filename not available): RtlRestoreContext
+00007FFACEA67B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF9B97AAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF9BA179B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA174E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA04EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA16F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA170271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (148): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (52): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FFACCF154E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFACE9C485B (ntdll): (filename not available): RtlUserThreadStart
+F0415 09:59:15.412] Error: EXCEPTION_ACCESS_VIOLATION
+00007FFACEA53B36 (ntdll): (filename not available): _C_specific_handler
+00007FFACEA68B1F (ntdll): (filename not available): _chkstk
+00007FFACE9F5B9A (ntdll): (filename not available): RtlRestoreContext
+00007FFACEA67B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF9B97AAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF9BA179B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA174E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA04EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA16F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA170271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (148): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (52): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FFACCF154E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFACE9C485B (ntdll): (filename not available): RtlUserThreadStart
+F0415 09:59:32.389] Error: EXCEPTION_ACCESS_VIOLATION
+00007FFACEA53B36 (ntdll): (filename not available): _C_specific_handler
+00007FFACEA68B1F (ntdll): (filename not available): _chkstk
+00007FFACE9F5B9A (ntdll): (filename not available): RtlRestoreContext
+00007FFACEA67B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF9B97AAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF9BA179B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA174E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA04EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA16F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA170271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (148): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (52): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FFACCF154E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFACE9C485B (ntdll): (filename not available): RtlUserThreadStart
+F0415 10:00:31.731] Error: EXCEPTION_ACCESS_VIOLATION
+00007FFACEA53B36 (ntdll): (filename not available): _C_specific_handler
+00007FFACEA68B1F (ntdll): (filename not available): _chkstk
+00007FFACE9F5B9A (ntdll): (filename not available): RtlRestoreContext
+00007FFACEA67B2E (ntdll): (filename not available): KiUserExceptionDispatcher
+00007FF9B97AAA80 (renderdoc): (filename not available): RENDERDOC_CheckAndroidPackage
+00007FF9BA179B1F (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA174E7B (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA04EBAC (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03F359 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA03E4FB (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA16F66C (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+00007FF9BA170271 (renderdoc): (filename not available): RENDERDOC_EndProfileRegion
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Engine.cpp (148): Engine::Draw
+E:\VsProject\Nanite\OpenGLNanite\OpenGL_Nanite\Main.cpp (52): main
+D:\a\_work\1\s\src\vctools\crt\vcstartup\src\startup\exe_common.inl (288): __scrt_common_main_seh
+00007FFACCF154E0 (KERNEL32): (filename not available): BaseThreadInitThunk
+00007FFACE9C485B (ntdll): (filename not available): RtlUserThreadStart

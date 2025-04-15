@@ -23,7 +23,7 @@ layout(std430, binding = 0) buffer ClusterBuffer {
 layout (location = 0) in vec3 position;
 layout (location = 1) in vec2 uv;				// 颜色变量的顶点属性位置值为 1
 out vec4 ourColor;
-uniform sampler2DArray meshTextures;
+out vec3 tex;
 uniform mat4 transformMatrix;						
 uniform mat4 projectionMatrix;
 uniform mat4 viewMatrix;
@@ -64,7 +64,8 @@ void main()
 	else if(viewMode == 1) ourColor = vec4(ToColor(vClusterID), 1.0f);
 	else if(viewMode == 2) ourColor = vec4(ToColor(vGroupID), 1.0f);
 	else if(viewMode == 3) ourColor = vec4(ToColor(vMipLevel), 1.0f);
-	else if(viewMode == 4) ourColor = texture(meshTextures, vec3(uv, textureID));
+	//else if(viewMode == 4) ourColor = texture(meshTextures, vec3(uv, textureID));
 
+	tex = vec3(uv, textureID);
 	gl_Position = projectionMatrix * viewMatrix * transformMatrix * vec4(position, 1.0f);	 // 注意矩阵乘法要从右向左读
 }

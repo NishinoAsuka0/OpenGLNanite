@@ -86,14 +86,24 @@ void Mesh::Init()
 void Mesh::LoadTex(string texPath)
 {
     int width, height, channels;
-    stbi_set_flip_vertically_on_load(true); // OpenGL纹理坐标系需要翻转Y轴
     unsigned char* data = stbi_load(texPath.c_str(), &width, &height, &channels, 0);
 
     glGenTextures(1, &textureID);
-    glBindTexture(GL_TEXTURE_2D, textureID);
+    if (data) {
+        glBindTexture(GL_TEXTURE_2D, textureID);
 
-    GLenum format = (channels == 4) ? GL_RGBA : GL_RGB;
-    glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+        GLenum format = (channels == 4) ? GL_RGBA : GL_RGB;
+        glTexImage2D(GL_TEXTURE_2D, 0, format, width, height, 0, format, GL_UNSIGNED_BYTE, data);
+    }
+    else {
+        // 图像加载失败，使用白色纹理
+        std::cout << "Failed to load texture: " << texPath << ", using white texture." << std::endl;
+
+        // 创建一个纯白色纹理
+        vector<unsigned char> whiteData(4096 * 4096 * 4, 255);
+        glBindTexture(GL_TEXTURE_2D, textureID);
+        glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, 4096, 4096, 0, GL_RGB, GL_UNSIGNED_BYTE, whiteData.data());
+    }
 
     glGenerateMipmap(GL_TEXTURE_2D);
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);

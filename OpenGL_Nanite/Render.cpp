@@ -227,7 +227,7 @@ void Renderer::InitBuffers() {
     glBindTexture(GL_TEXTURE_2D_ARRAY, textureArray);
 
     // 设置纹理参数
-    glTexStorage3D(GL_TEXTURE_2D_ARRAY, 1, GL_RGBA8, 4096, 4096, numTextures);
+    glTexStorage3D(GL_TEXTURE_2D_ARRAY, 1, GL_RGBA8, 2048, 2048, numTextures);
 
     // 设置纹理过滤和包装方式
     glTexParameteri(GL_TEXTURE_2D_ARRAY, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
@@ -257,9 +257,9 @@ void Renderer::LoadTex(string dataName)
             std::cout << "Failed to load texture: " << imagePath << ", using white texture." << std::endl;
 
             // 创建一个纯白色纹理
-            vector<unsigned char> whiteData(4096 * 4096 * 4, 255);
+            vector<unsigned char> whiteData(2048 * 2048 * 4, 255);
             glBindTexture(GL_TEXTURE_2D_ARRAY, textureArray);
-            glTexSubImage3D(GL_TEXTURE_2D_ARRAY, 0, 0, 0, i, 4096, 4096, 1, GL_RGBA, GL_UNSIGNED_BYTE, whiteData.data());
+            glTexSubImage3D(GL_TEXTURE_2D_ARRAY, 0, 0, 0, i, 2048, 2048, 1, GL_RGBA, GL_UNSIGNED_BYTE, whiteData.data());
         }
 
         glBindTexture(GL_TEXTURE_2D_ARRAY, 0); 
@@ -347,8 +347,8 @@ void Renderer::Render()
     u32 triCount = 0;
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glBindFramebuffer(GL_FRAMEBUFFER, 0);
-    glEnable(GL_DEBUG_OUTPUT);
-    glDebugMessageCallback(OpenGLDebugCallback, nullptr);
+    /*glEnable(GL_DEBUG_OUTPUT);
+    glDebugMessageCallback(OpenGLDebugCallback, nullptr);*/
     //第一次剔除
     if (firstFrame) {
         prevView = viewMatrix;

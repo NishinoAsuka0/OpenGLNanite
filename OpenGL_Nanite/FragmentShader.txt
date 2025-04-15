@@ -2,6 +2,8 @@
 in vec4 ourColor;
 uniform uint viewMode;
 out vec4 FragColor;
+uniform sampler2DArray meshTextures;
+in vec3 tex;
 
 uint MurmurMix(uint Hash){
 	Hash^=Hash>>16;
@@ -30,8 +32,11 @@ void main()
 	uint triangleID = gl_PrimitiveID;
 	vec3 color = ToColor(triangleID);
 	vec4 finalColor = vec4(color, 1.0f);
-	if(viewMode != 0){
+	if(viewMode != 0 && viewMode != 4){
 		finalColor = ourColor;
+	}
+	else if(viewMode == 4){
+		finalColor = texture(meshTextures, tex);
 	}
     //FragColor = vec4(color, 1.0f);
 	FragColor = finalColor;

@@ -72,7 +72,7 @@ Mesh* Model::ProcessMesh(aiMesh* mesh, const aiScene* scene, bool useNanite)
         vec3 vector;
 
         //Ëõ·Å
-        aiVector3D adjusted = mesh->mVertices[i] * scaleFactor;
+        aiVector3D adjusted = mesh->mVertices[i];
 
         vector.x = adjusted.x;
         vector.y = adjusted.y;
